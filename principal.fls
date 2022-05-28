@@ -1057,6 +1057,8 @@ INPUT .\chapters\basics.tex
 INPUT chapters\basics.tex
 INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkr.tfm
 INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkb.tfm
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkr.tfm
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkb.tfm
 INPUT .\chapters\ThebasicsImages\\image1.jpeg
 INPUT .\chapters\ThebasicsImages\\image1.jpeg
 INPUT chapters\ThebasicsImages\\image1.jpeg
@@ -1064,6 +1066,8 @@ INPUT .\chapters\ThebasicsImages\\image1.jpeg
 INPUT .\chapters\ThebasicsImages\\image1.jpeg
 INPUT .\chapters\ThebasicsImages\\image1.jpeg
 INPUT .\chapters\ThebasicsImages\\image1.jpeg
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkr.tfm
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkb.tfm
 INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkb.tfm
 INPUT .\chapters\ThebasicsImages\\image2.jpeg
 INPUT .\chapters\ThebasicsImages\\image2.jpeg
@@ -1120,8 +1124,6 @@ INPUT .\chapters\ThebasicsImages\\image8.png
 INPUT .\chapters\ThebasicsImages\\image8.png
 INPUT .\chapters\ThebasicsImages\\image8.png
 INPUT .\chapters\ThebasicsImages\\image8.png
-INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkr.tfm
-INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkb.tfm
 INPUT .\chapters\ThebasicsImages\\image9.jpeg
 INPUT .\chapters\ThebasicsImages\\image9.jpeg
 INPUT chapters\ThebasicsImages\\image9.jpeg
@@ -1133,6 +1135,13 @@ INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt0900.tfm
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT .\chapters\ThebasicsImages\\image10.jpeg
 INPUT .\chapters\ThebasicsImages\\image10.jpeg
 INPUT chapters\ThebasicsImages\\image10.jpeg
@@ -1154,6 +1163,7 @@ INPUT .\chapters\ThebasicsImages\\image12.jpeg
 INPUT .\chapters\ThebasicsImages\\image12.jpeg
 INPUT .\chapters\ThebasicsImages\\image12.jpeg
 INPUT .\chapters\ThebasicsImages\\image12.jpeg
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkbi.tfm
 INPUT .\chapters\ThebasicsImages\\image13.png
 INPUT .\chapters\ThebasicsImages\\image13.png
 INPUT chapters\ThebasicsImages\\image13.png
@@ -1168,7 +1178,6 @@ INPUT .\chapters\ThebasicsImages\\image14.png
 INPUT .\chapters\ThebasicsImages\\image14.png
 INPUT .\chapters\ThebasicsImages\\image14.png
 INPUT .\chapters\ThebasicsImages\\image14.png
-INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkri.tfm
 INPUT .\chapters\ThebasicsImages\\image15.png
 INPUT .\chapters\ThebasicsImages\\image15.png
 INPUT chapters\ThebasicsImages\\image15.png
@@ -1267,8 +1276,6 @@ INPUT .\chapters\GeneticFingImages\\LD_plot.PNG
 INPUT .\chapters\GeneticFingImages\\LD_plot.PNG
 INPUT .\chapters\GeneticFingImages\\LD_plot.PNG
 INPUT .\chapters\GeneticFingImages\\LD_plot.PNG
-INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkr.tfm
-INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkb.tfm
 INPUT .\chapters\GeneticFingImages\\SNP_number.PNG
 INPUT .\chapters\GeneticFingImages\\SNP_number.PNG
 INPUT chapters\GeneticFingImages\\SNP_number.PNG
@@ -1522,7 +1529,6 @@ INPUT .\chapters\TumorEvStudiesIIImages\\image7.png
 INPUT .\chapters\TumorEvStudiesIIImages\\image7.png
 INPUT .\chapters\TumorEvStudiesIIImages\\image7.png
 INPUT .\chapters\TumorEvStudiesIIImages\\image7.png
-INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qbkbi.tfm
 INPUT .\chapters\TumorEvStudiesIIImages\\image8.png
 INPUT .\chapters\TumorEvStudiesIIImages\\image8.png
 INPUT chapters\TumorEvStudiesIIImages\\image8.png
@@ -1590,9 +1596,11 @@ INPUT .\chapters\TumorEvStudiesIIImages\\image16.png
 INPUT principal.aux
 INPUT .\principal.out
 INPUT .\principal.out
+INPUT C:\Users\Maurizio\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
+INPUT C:\Users\Maurizio\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\tex-gyre\q-ec.enc
-INPUT C:\Users\Maurizio\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
-INPUT C:\Users\Maurizio\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
+INPUT C:\Users\Maurizio\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0900.pk
+INPUT C:\Users\Maurizio\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0900.pk
 INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\tex-gyre\q-ts1.enc
 INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
