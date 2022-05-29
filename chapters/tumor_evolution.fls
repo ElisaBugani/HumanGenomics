@@ -1,0 +1,8 @@
+PWD c:\Users\Maurizio\Desktop\HumanGenomics\chapters
+INPUT C:\Users\Maurizio\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\Maurizio\Desktop\HumanGenomics\chapters\tumor_evolution.tex
+OUTPUT tumor_evolution.log
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\Maurizio\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+OUTPUT tumor_evolution.pdf
+INPUT C:\Users\Maurizio\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
