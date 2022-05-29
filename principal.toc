@@ -1,53 +1,61 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Basic principles}{3}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Genetic Make-Up}{4}{subsection.1.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1.1}Differences in genetic Make-Up, example}{5}{subsubsection.1.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Acquired DNA aberrations}{6}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Experimental approaches}{8}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Experimental approaches}{9}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Information after reads mapping over reference genome}{12}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Whole Genome Sequencing Coverage}{13}{subsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1.2.2.1}Difference between sequence coverage and physical coverage}{14}{subsubsection.1.2.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2.2}Example coverage observation}{15}{subsubsection.1.2.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.2.3}Note that this isn't possible with array-based technologies.}{16}{subsubsection.1.2.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.2.2}Note that this isn't possible with array-based technologies.}{16}{subsubsection.1.2.2.2}%
 \contentsline {section}{\numberline {1.3}The reference sequence of the human genome}{16}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Interpreting pair orientation}{17}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Inversion}{18}{subsection.1.3.2}%
 \contentsline {subsection}{\numberline {1.3.3}Tandem duplication}{20}{subsection.1.3.3}%
 \contentsline {subsection}{\numberline {1.3.4}Inverted duplication}{21}{subsection.1.3.4}%
-\contentsline {subsection}{\numberline {1.3.5}Deletion}{22}{subsection.1.3.5}%
-\contentsline {chapter}{\numberline {2}Genetic Figerprinting}{23}{chapter.2}%
-\contentsline {subsection}{\numberline {2.0.1}Variants used for genetic testing}{23}{subsection.2.0.1}%
-\contentsline {section}{\numberline {2.1}SNPs features}{23}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Hardy-Weinberg equilibrium and Minor Allele frequency}{23}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Minor Allele Frequency}{24}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Haplotype Blocks}{24}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Other SNPs features}{25}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Number of SNPs to select}{26}{subsection.2.1.5}%
-\contentsline {subsubsection}{\numberline {2.1.5.1}Experimental mismatches : Genotype call error rate}{26}{subsubsection.2.1.5.1}%
-\contentsline {paragraph}{\numberline {2.1.5.1.1}Some examples:}{26}{figure.caption.10}%
-\contentsline {subsubsection}{\numberline {2.1.5.2}Biological mismatches}{27}{subsubsection.2.1.5.2}%
-\contentsline {section}{\numberline {2.2}Genetic Distance}{27}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Some questions}{30}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Further considerations}{30}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Building a SNP-based genetic test}{31}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Implementation of a probabilistic test}{32}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Further considerations and examples}{33}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Example 1: Cell line passages}{33}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Individual's Relatedness (genotype-distance)}{34}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Example 3: Cancer supscettibility test}{35}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Genetic structure of the human population}{35}{subsection.2.4.4}%
-\contentsline {subsubsection}{\numberline {2.4.4.1}Example paper: 'Genes mirror geography within Europe'}{36}{subsubsection.2.4.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.4.2}Summary and notes}{37}{subsubsection.2.4.4.2}%
-\contentsline {subsection}{\numberline {2.4.5}SPIA Assay}{37}{subsection.2.4.5}%
-\contentsline {chapter}{\numberline {3}IGV (Integrative Genomics Viewer)}{39}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Main characteristics}{39}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Igvtools}{41}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Session Files}{42}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Some of the main utilizations}{42}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}RNA-seq alignments}{43}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Study of variants}{43}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Exercise}{43}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Tumor evolution studies (continued)}{46}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Recalls from the previous lecture}{46}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Ploidy and purity correction on $\qopname \relax o{log}_2(\frac {T}{N})$ data}{51}{section.4.2}%
+\contentsline {subsection}{\numberline {1.3.5}Deletion}{23}{subsection.1.3.5}%
+\contentsline {chapter}{\numberline {2}Genetic Figerprinting}{24}{chapter.2}%
+\contentsline {subsection}{\numberline {2.0.1}Variants used for genetic testing}{24}{subsection.2.0.1}%
+\contentsline {section}{\numberline {2.1}SNPs features}{24}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Hardy-Weinberg equilibrium and Minor Allele frequency}{24}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Minor Allele Frequency}{25}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Haplotype Blocks}{25}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Other SNPs features}{26}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Number of SNPs to select}{27}{subsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.5.1}Experimental mismatches : Genotype call error rate}{27}{subsubsection.2.1.5.1}%
+\contentsline {paragraph}{\numberline {2.1.5.1.1}Some examples:}{27}{figure.caption.14}%
+\contentsline {subsubsection}{\numberline {2.1.5.2}Biological mismatches}{28}{subsubsection.2.1.5.2}%
+\contentsline {section}{\numberline {2.2}Genetic Distance}{29}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Some questions}{31}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Further considerations}{31}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Building a SNP-based genetic test}{32}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Implementation of a probabilistic test}{33}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Further considerations and examples}{34}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Example 1: Cell line passages}{35}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Individual's Relatedness (genotype-distance)}{36}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Example 3: Cancer supscettibility test}{36}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Genetic structure of the human population}{37}{subsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.4.1}Example paper: 'Genes mirror geography within Europe'}{37}{subsubsection.2.4.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.4.2}Summary and notes}{38}{subsubsection.2.4.4.2}%
+\contentsline {subsection}{\numberline {2.4.5}SPIA Assay}{39}{subsection.2.4.5}%
+\contentsline {chapter}{\numberline {3}IGV (Integrative Genomics Viewer)}{40}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Main characteristics}{40}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Igvtools}{42}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Session Files}{43}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Some of the main utilizations}{43}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}RNA-seq alignments}{44}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Study of variants}{44}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Exercise}{44}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Tumor evolution studies via NGS data}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Why studying tumor evolution?}{47}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tumor heterogeneity}{47}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Algorithms to study tumor evolution}{49}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Estimating admixture and clonality}{52}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Tumor evolution studies (continued)}{56}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Recalls from the previous lecture}{56}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ploidy and purity correction on $\qopname \relax o{log}_2(\frac {T}{N})$ data}{61}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Extracellular vesicles}{73}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction to EVs}{73}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Medical applications of EVs}{75}{section.6.2}%
+\contentsline {section}{\numberline {6.3}EVs conference}{77}{section.6.3}%

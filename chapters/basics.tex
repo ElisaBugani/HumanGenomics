@@ -2,7 +2,7 @@
 
 
 \chapter{Introduction}
-\section{}
+\section{Basic principles} \label{chap: Basics}
 
 \begin{figure}[H]
   \includegraphics[width=4.32507in,height=3.86281in]{image1.jpeg}
@@ -27,21 +27,25 @@ are mainly used for the inherited ones.
 
 
 \textbf{Single Nucleotide Polymorphism} (SNP) is a sequence variation affecting
-single amino acid → point mutation (figure \ref{fig: SNP}).
+single bases (point mutations) (figure \ref{fig: SNP}).
 
 The genomes of two unrelated individuals have about 1\% of different bases →
 that percentage corresponds to the SNPs.
 
-But looking at the \textbf{Copy Number}
+But looking at the \textbf{Copy Number Variants} (CNV), that difference will be
+way higher than only 1\% DNA not present in only two copies, but in multiple,
+single or even zero copies (hemizygous loss, homozygous loss). They are less
+known as inherited type of variants because they are harder to detect and
+identify, but they provide a lot of uniqueness in each of us.
 
-\includegraphics[width=2.93475in,height=2.26167in]{image3.jpeg}\textbf{Variants}
-(CNV), that difference will be way higher than only 1\%
 
-DNA not present in only two copies, but in multiple, single or even zero copies
-(hemizygous loss, homozygous loss)
+\begin{figure}[H]
+  \includegraphics[width=2.93475in,height=2.26167in]{image3.jpeg} 
+  \centering
+  \caption{}
+  \label{fig: SNP}
+\end{figure}
 
-They are less known as inherited type of variants because they are harder to
-detect and identify, but they provide a lot of uniqueness in each of us.
 
 Why are SNPs and CNVs so important?
 
@@ -78,6 +82,7 @@ disease
 \hypertarget{differences-in-genetic-make-up-example}{%
 \subsubsection{Differences in genetic Make-Up,
 example}\label{differences-in-genetic-make-up-example}}
+% article to be read? #TODO
 
 
 Absorption, distribution, metabolism and elimination (ADME) genetic variants
@@ -86,9 +91,16 @@ patients' treatment response. Both common and rare variants are involved.
 
 \includegraphics[width=6.18852in,height=2.6224in]{image5.jpeg}
 
-Three main ways to study genetic variants: GWAS (genome-wide association study)
+Three main ways to study genetic variants: 
 
-SNPs panel Candidate SNP
+\begin{itemize}
+  \item GWAS (genome-wide association study)
+  \item SNPs panel
+  \item Candidate SNP
+\end{itemize}
+
+
+
 
 For example, in terms of hypothesis, if I study all the variants in the human
 genome and I query them in a large population, I generate data without
@@ -106,11 +118,12 @@ Precision medicine → treatment (or dosage) of a patient based on their
 individual traits: takes into consideration genetic and genomic of the
 individual and tumor/disease cells
 
-Starch rich diet → CNV in the genome Drink beer and turn red → ADME gene
-
-Athletes with a deletion of a gene, the steroids were not found in the
-anti-doping tests
-
+\begin{itemize}
+  \item Drink beer and turn red → ADME gene
+  \item Athletes with a deletion of a gene, the steroids were not found in the
+  anti-doping tests
+\end{itemize}
+ 
 
 \hypertarget{acquired-dna-aberrations}{%
 \subsection{Acquired DNA aberrations}\label{acquired-dna-aberrations}}
@@ -119,62 +132,79 @@ anti-doping tests
 Somatic variants are the variants NOT inherited from parents and not transmitted
 to offspring. They are:
 
-\textbf{Single Nucleotide Variants} (SNV) are somatic changes of single
-nucleotides present in only certain cells, instead of SNPs that are present in
-all cells of our body.
-
-\textbf{Indels} are changes that involve few nucleotides by INsertion and
-DEletion
-
-\textbf{Rearrangements} are mutations that can involve events like
+\begin{itemize}
+  \item \textbf{Single Nucleotide Variants} (SNV) are somatic changes of single
+  nucleotides present in only certain cells, instead of SNPs that are present in
+  all cells of our body.
+  \item \textbf{Indels} are changes that involve few nucleotides by INsertion
+  and DEletion
+  \item \textbf{Rearrangements} are mutations that can involve events like
 translocations, inversion, chromothripsis,.. usually these events are caused by
 breakage in the DNA double helices a two different locations, followed by a
 rejoining of the broken ends to produce a new chromosomal arrangement of genes,
 different from the beginning
 
-\textbf{Somatic copy number aberrations} (\textbf{SCNA}) are somatic changes
-similar to CNVs. They can be every change related to the number of copies like
-loss of a portion of a genome, loss of both alleles, extra copies...
+  \item \textbf{Somatic copy number aberrations} (\textbf{SCNA}) are somatic
+changes similar to CNVs. They can be every change related to the number of
+copies like loss of a portion of a genome, loss of both alleles, extra copies...
+\end{itemize}
 
-\textbf{Examples} of acquired DNA aberrations:
+\begin{figure}[H]
+  \includegraphics[width=6.1748in,height=2.09646in]{image6.jpeg}\\
+  \centering
+  \caption{translocations}
+  \label{fig: translocations}
+\end{figure}
+
+Rearrangements include:
+
+\begin{itemize}
+  \item \textbf{Balanced translocation} (figure \ref{fig: translocations}): you conserve the quantity of DNA, there
+  isn't any loss or gain.
+  
+  \item \textbf{Unbalanced translocation}: A genomic portion is translocated
+  from a chromosome to another, there is not vice versa.
+  
+  \item \textbf{Inversions} in only ONE chromosome: everything is normal instead
+  in the break points.
+
+  \begin{figure}[H]
+    \includegraphics[width=6.22722in,height=2.39062in]{image7.jpeg}
+    \centering
+    \caption{Duplications inversions and deletions}
+    \label{fig: Duplications inversions and deletions}
+  \end{figure}
+
+  \item \textbf{Copy number changes:} duplication or deletion. It could happen in
+  the same chromosome but also in different chromosomes.
+\end{itemize}
+
+Other important modifications:
+
+\begin{itemize}
+  \item \textbf{Chromoplexy}: a class of complex somatic DNA rearrangements
+  whereby abundant DNA deletions and intra- and inter-chromosomal translocations
+  that have originated in an interdependent way occur within a single cell
+  cycle.
+
+  \item \textbf{Chromothripsis}: a clustered chromosomal rearrangement in
+  confined genomic regions that results from a single catastrophic event,
+  usually limited to one chromosome.
+
+  \item \textbf{Kataegis}: a phenomenon that is characterized by large cluster
+  of mutations (hypermutation) in the genome of cancer cells. An APOBEC family
+  enzyme might be responsible fo the kataegis process.
+\end{itemize}
+  
+\begin{figure}[H]
+  \includegraphics[width=3.81944in,height=3.21433in]{image8.png}\\
+  \centering
+  \caption{Chromoplexy}
+  \label{fig: Chromoplexy}
+\end{figure}
 
 
-\includegraphics[width=6.1748in,height=2.09646in]{image6.jpeg}
-
-
-\textbf{Balanced translocation}: you conserve the quantity of DNA, there isn't
-any loss or gain
-
-\textbf{Unbalanced translocation}: A genomic portion is translocated from a
-chromosome to another, there is not vice versa.
-
-\includegraphics[width=6.22722in,height=2.39062in]{image7.jpeg}
-
-\textbf{Inversions} in only ONE chromosome: everything is normal instead in the
-break points
-
-\textbf{Copy number changes:} duplication or deletion
-
-It could happen in the same chromosome but also in different chromosomes
-
-Other types of complex somatic events include:
-
-\textbf{Chromoplexy}: a class of complex somatic DNA rearrangements whereby
-abundant DNA deletions and intra- and inter-chromosomal translocations that have
-originated in an interdependent way occur within a single cell cycle
-
-\includegraphics[width=3.81944in,height=3.21433in]{image8.png}
-
-\textbf{Chromothripsis}: a clustered chromosomal rearrangement in confined
-genomic regions that results from a single catastrophic event, usually limited
-to one chromosome
-
-\textbf{Kataegis}: a phenomenon that is characterized by large cluster of
-mutations (hypermutation) in the genome of cancer cells. An APOBEC family enzyme
-might be responsible fo the kataegis process
-
-
-when an aberration (clonal) occurs, all the cells will harbour the aberration
+When an aberration (clonal) occurs, all the cells will harbour the aberration
 and at some point another aberration (subclonal of the other) could appear in
 just one cell line. The \textbf{clonal} aberration is present in all the cells,
 the \textbf{subclonal} aberration is inherited in just one cell line. Clonality
@@ -195,27 +225,27 @@ aberrations. %#TODO which tecniques?
   \caption{Meyerson et al. 2010, ``Advances in Understanding Cancer Genomes
   through Second-Generation Sequencing.'', Nature Reviews Genetics,
   \url{https://doi.org/10.1038/nrg2841}}
+  \label{fig: DNA variants}
 \end{figure}
 
-Bulk of tumor tissue/cells from the blood procedure (figure \ref{fig: DNA cancer
-variants detection}):
+Bulk of tumor tissue/cells from the blood procedure (figure \ref{fig: DNA variants}):
 
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
 \item
-  DNA isolation
+  DNA isolation.
 \item
   Gene-specific oligonucleotides (\textbf{baits}) that get hybridized onto the
-  tumor DNA → the baits have a tag that allows them to be isolated
+  tumor DNA → the baits have a tag that allows them to be isolated.
 \item
-  The DNA does get fragmented
+  The DNA does get fragmented.
 \item
-  The captured DNA is eluted and prepared into sequencing libraries
+  The captured DNA is eluted and prepared into sequencing libraries.
 \item
-  Sequencing
+  Sequencing.
 \item
-  Aligned to the bait sequences
+  Aligned to the bait sequences.
 \end{enumerate}
 
 
@@ -234,11 +264,12 @@ We sequence baits because is way cheaper (exons of 50 bases instead the whole
 genome)
 
 After fragmentation procedure, before adding the adapters, we can choose between
-two different sequencing approaches \ref{fig: sequencing methods}:
+two different sequencing approaches \ref{fig: sequencing methods}:\\
 
-\includegraphics[width=5.64649in,height=0.35833in]{image11.png}\\ \label{fig:
-sequencing methods}
-\includegraphics[width=5.97751in,height=1.60125in]{image12.jpeg}
+
+\includegraphics[width=0.75\textwidth]{image11.png}\\ \label{fig: sequencing
+methods}
+\includegraphics[width=0.75\textwidth]{image12.jpeg}
 
 \begin{itemize}
   \item \textit{\textbf{Paired End (PE) sequencing}}
@@ -289,10 +320,10 @@ genomic alteration/information can be detected:
   \item If you have \textbf{homozygous deletion}, you don't see anything mapped
   in that portion: there's no DNA. Doesn't matter if SE or PE.
   
-  \item If you have \textbf{hemizygous deletion}, you see the see the read
-  mapped to that portion where the hemizygous deletion is sitting, that is more
-  or less proportional to half of the reads that you have in regions where you
-  don't have a copy number change. Doesn't matter if SE or PE.
+  \item If you have \textbf{hemizygous deletion}, you see the read mapped to
+  that portion where the hemizygous deletion is sitting, that is more or less
+  proportional to half of the reads that you have in regions where you don't
+  have a copy number change. Doesn't matter if SE or PE.
   
   \item If you have \textbf{gain}, what you get is higher number of reads
   aligned against that part of DNA, underlying the fact that the molecule you
@@ -316,13 +347,11 @@ genomic alteration/information can be detected:
 
 
 The \textbf{local coverage} (cov) as shown in figure \ref{fig: coverage and
-allele frequency} at position $i$ is the number of reads that span
-$p_i$.
+allele frequency} at position $i$ is the number of reads that span $p_i$.
 
 The \textbf{allelic fraction} (AF) as shown in figure \ref{fig: coverage and
-allele frequency} at position $i$ is the proportion of reads that supports
-the reference base in $p_i$ (= the reference or the
-alternative allele).
+allele frequency} at position $i$ is the proportion of reads that supports the
+reference base in $p_i$ (= the reference or the alternative allele).
 
 \subsection{Whole Genome Sequencing Coverage}
 
@@ -347,14 +376,14 @@ experiment. When you design an NGS experiment, you should know before what is
 the type of coverage you need to answer the question you wanna ask with your
 experiment. For example, if you want to look at the genotype of SNPs (inherited
 polymorphisms at single side), you don't really need a coverage which is above
-$10$ or $15$. So you can design your experiment in order to have an average coverage
-equal to $10$ or $15$. To do that, you reverse the equation and count how many reads
-you need to generate to achieve that goal. \\
+$10$ or $15$. So you can design your experiment in order to have an average
+coverage equal to $10$ or $15$. To do that, you reverse the equation and count
+how many reads you need to generate to achieve that goal. \\
 
-\textit{N.B.}: The number of mapped reads will be always lower of the number of reads
-generated by the machine (than the expected). There might be duplicates that you
-might not be able to use because there might be reads that have a quality below
-the threshold you intend to use.
+\textit{N.B.}: The number of mapped reads will be always lower of the number of
+reads generated by the machine (than the expected). There might be duplicates
+that you might not be able to use because there might be reads that have a
+quality below the threshold you intend to use.
 
 
 \hypertarget{difference-between-sequence-coverage-and-physical-coverage}{%
@@ -362,7 +391,8 @@ the threshold you intend to use.
 coverage}\label{difference-between-sequence-coverage-and-physical-coverage}}
 
 
-A graphic view of how SE (Single End Sequencing) or PE (Paired End Sequencing) can be used:
+A graphic view of how \textbf{SE (Single End Sequencing)} or \textbf{PE (Paired
+End Sequencing)} can be used:
 
 \begin{figure}[H]
   \includegraphics[width=0.65\textwidth]{image15.png}
@@ -383,45 +413,51 @@ In Paired End sequencing protocols, the physical coverage is always higher than
 the sequence coverage. Choosing the method illustrated in panel 3 (figure
 \ref{fig: physical coverage vs coverage}).
 
-Making estimation of intended coverage and observed coverage is very important. Below I will report an example:
+Making estimation of intended coverage and observed coverage is very important.
+Below I will report an example:\\
 
 
-\subsubsection{Example coverage observation}
+\noindent \underline{\textbf{Example coverage observation:}}\\
 
-In these panels were designed to sequence a set of $10$ genes that the researchers
-were interested in for prostate cancer. They designed this panel, sequenced cell
-lines on this panel and observed the following points
+In these panels were designed to sequence a set of $10$ genes that the
+researchers were interested in for prostate cancer. They designed this panel,
+sequenced cell lines on this panel and observed the following points
 
 \begin{itemize}
-  \item On x-axis: the genomic location
-  \item On y-axis: the local coverage (amplicon median coverage = each bar represents
-  the local coverage of about 30 bp)
+  \item On $x$-axis: the genomic location
+  \item On $y$-axis: the local coverage (amplicon median coverage = each bar
+  represents the local coverage of about 30 bp)
 \end{itemize}
 
 The different colors represent the different genes
 
 
 \begin{itemize}
-  \item \textbf{$1^{st}$ panel}: Local coverage (pile-up) of selected areas (targeted sequencing assay): 7 genes
+  \item \textbf{$1^{st}$ panel}: Local coverage (pile-up) of selected areas
+  (targeted sequencing assay): 7 genes
 
   \begin{itemize}
-    \item + 1 multi-gene region (T2ERG). Alternate colors indicate targeted areas The
-    barplot show a single sample (LnCaP cell line; cancer cell line) data.
-    \item Apparent \textbf{deletion} of PTEN (monoallelic deletion) because the local
-    coverage of PTEN is significantly lower than the one from other genes.
+    \item + 1 multi-gene region (T2ERG). Alternate colors indicate targeted
+    areas The barplot show a single sample (LnCaP cell line; cancer cell line)
+    data.
+    \item Apparent \textbf{deletion} of PTEN (monoallelic deletion) because the
+    local coverage of PTEN is significantly lower than the one from other genes.
   \end{itemize}
   
   \includegraphics[width=6.13481in,height=1.52625in]{image16.png}
 
-  \item \textbf{$2^{nd}$ panel}: Local coverage (pile-up) of selected areas (targeted sequencing assay): 7 genes
+  \item \textbf{$2^{nd}$ panel}: Local coverage (pile-up) of selected areas
+  (targeted sequencing assay): 7 genes
 
   \begin{itemize}
     \item + 1 multi-gene region.
-    \item Monoallelic deletion and partial biallelic deletion of PTEN because one portion
-    is deleted and one not. PTEN has a \textbf{partial homozygous deletion}.
-    \item The PC3 cell line shows a little bit of gain in the gene SPOP and FOXA1.
-    \item The average coverage for the PC3 cells is approximately the same as the previous
-    sample.
+    \item Monoallelic deletion and partial biallelic deletion of PTEN because
+    one portion is deleted and one not. PTEN has a \textbf{partial homozygous
+    deletion}.
+    \item The PC3 cell line shows a little bit of gain in the gene SPOP and
+    FOXA1.
+    \item The average coverage for the PC3 cells is approximately the same as
+    the previous sample.
   \end{itemize}
   
   \includegraphics[width=6.15327in,height=1.09125in]{image17.png}
@@ -429,18 +465,19 @@ The different colors represent the different genes
   \item \textbf{$3$rd panel}: 
   
   \begin{itemize}
-    \item There's no homozygous deletion but has a high level amplification of one area
-    \emph{absorbs} all the reads. Massive amplification of the Androgen Receptor
-    (AR) → error: because it inhibits the sensitivity of detecting copy number
-    changes in any other gene.
-    \item When designing a panel we must pay attention and make sure that we don't have
-    potential aberration that basically will draw all the attention of your
-    experiment and leave you without information or sensitivity in all other
-    regions.
-    \item  It's easy to increase the experimental coverage (i.e. the sequence depth) at
-    later point. Provided tour original sample/library is still available, you can
-    perform another run of sequencing and then combine the output from different
-    runs
+    \item There's no homozygous deletion but has a high level
+    \textbf{amplification} of one area \emph{absorbs} all the reads. Massive
+    amplification of the Androgen Receptor (AR) → error: because it inhibits the
+    sensitivity of detecting copy number changes in any other gene, the signal
+    is excessively intense.
+    \item When designing a panel we must pay attention and make sure that we
+    don't have potential aberration that basically will draw all the attention
+    of your experiment and leave you without information or \textbf{sensitivity}
+    in all other regions.
+    \item  It's easy to \underline{increase the experimental coverage (i.e. the
+    sequence depth) at later point}. Provided tour original sample/library is
+    still available, you can perform another run of sequencing and then combine
+    the output from different runs.
   \end{itemize}
 
   \includegraphics[width=6.17134in,height=1.51875in]{image18.jpeg}
@@ -458,7 +495,11 @@ Repeated regions due to \textbf{short reads}
 
 What is the problem of short sequencing on long genome?
 
-Complexity regions CG content
+\begin{itemize}
+  \item Complexity regions
+  \item GC content
+\end{itemize}
+% non ho capito questo commento #TODO
 
 
 \hypertarget{the-reference-sequence-of-the-human-genome}{%
@@ -473,18 +514,17 @@ we finally have the complete human reference genome sequence.
 But we need to consider the polymorphisms, there is no \textbf{unique} genome.
 How to integrate them into a single reference genome? There is a consortium that
 deals with these problems. They assemble a reference genome that reflects the
-more common (in the whole population) sequences at each position of the human
+most common (in the whole population) sequences at each position of the human
 genome, but also tracks information of everything that is polymorphic. So that
 we can use the latest release of what they built as reference genome and then
 use databases to learn about all the polymorphic sites and all the features of
-every polymorphic variants
+every polymorphic variants.
 
 Genome Reference Consortium:
-% \href{https://www.ncbi.nlm.nih.gov/grc/human}{\uline{htt}p\uline{s://www.ncbi.nlm.nih.gov/grc/human}}
-where you can find different versions of human reference genome
+(\href{https://www.ncbi.nlm.nih.gov/grc/human}{Genome Reference Consortium
+link}) where you can find different versions of human reference genome
 
-UCSC Genome Browser on Human:
-% \href{http://genome-euro.ucsc.edu/}{\uline{htt}p\uline{://genome-euro.ucsc.edu/}}
+UCSC Genome Browser on Human: (\href{http://genome-euro.ucsc.edu/}{UCSC link})
 
 where you can upload different versions of the reference
 
@@ -493,53 +533,45 @@ where you can upload different versions of the reference
 \subsection{Interpreting pair orientation}\label{interpreting-pair-orientation}}
 
 
-Using IGV (Integrative Genomics Viewer)
+Using IGV (Integrative Genomics Viewer) (see chapter \ref{chap: IGV} for more
+details)
 
 \includegraphics[width=6.32631in,height=4.35875in]{image19.jpeg}
 
 The main characteristic of IGV is that it is a main view viewer: all the
-information are in one window
-
-Every vertical bar is a read
+information are in one window.
 
 On the x-axis there's the genome coordinates at the top, the reference genome at
-the bottom (we can select the reference genome we prefer)
+the bottom (we can select the reference genome we prefer).
 
 Along with the data tracks there is the local coverage of the kb shown in the
-window (of the sample we are looking at)
+window (of the sample we are looking at).
 
 You can get any information you want of any single read that you are uploading,
 very useful to see difference from the reference genome because every aberration
 or whatsoever is highlighted by a different color in the local coverage of a
 nucleotide base. Moreover, it gives information about the quality of the read
 and the bases, if you have a PE protocol, it tells you also information about
-the PE for each of them
+the PE for each of them.
 
 The \textbf{orientation} of paired end can be used to detect structural events,
-including: inversions
+including: 
 
-duplications translocations
-
-According to the Illumina protocol, the two ends are LR oriented, but we could
-also obtain other orientations, like LL RR RL, if we come up against the events
-mentioned above.
+\begin{itemize}
+  \item Inversions
+  \item Duplications
+  \item Translocations
+\end{itemize}
 
 
 \includegraphics[width=3.89062in,height=2.65in]{image20.jpeg}
-
-
-LR normal reads. They are left and right (respectively) of the unsequenced part
-of the sequenced DNA fragment when aligned back to the reference genome
-
-LL, RR implies inversion in sequenced DNA with respect to reference RL implies
-duplication or translocation with respect to reference
 
 
 \hypertarget{inversion}{%
 \subsection{Inversion}\label{inversion}}
 
 
-A segment of DNA is inverted
+A segment of DNA is inverted\\
 
 
 \includegraphics[width=5.85745in,height=2.45625in]{image21.jpeg}
@@ -549,9 +581,9 @@ The most important pairs are the ones that stand between junctions because they
 are the most informative ones.
 
 Here one end mapped where it was on the reference genome while the other end
-reversed its orientation
+reversed its orientation.\\
 
-In IGV:
+In IGV:\\
 
 
 \includegraphics[width=6.29861in,height=4.32833in]{image22.jpeg}
@@ -559,38 +591,33 @@ In IGV:
 
 Information that help us:
 
-The insert size from the target molecule (= the subject) is way longer. For all
-the pairs that are at the breakpoint, the insert size is different from the
-expected
+\begin{itemize}
+  \item The \textbf{insert size} from the target molecule (= the subject) is way
+  longer. For all the pairs that are at the breakpoint, the insert size is
+  different from the expected.
 
-The orientation is different
+  \item The \textbf{orientation} is different.
+  
+  \item If you look at the local coverage, you can see a \textbf{drop} in two
+  points: at the breakpoints. The reads that are mapping the junctions cannot
+  map the reference genome because the breakpoint sequence is altereed in the
+  reference genome. So, if we have an inversion in only one of the two alleles,
+  then the reads coming from the allele with the inversion will not contribute
+  to the local coverage at the breakpoint. The contribution to the local
+  coverage will come only from one allele.
+\end{itemize}
 
-If you look at the local coverage, you can see a \textbf{drop} in two points: at
-the breakpoints. The reads that are mapping the junctions cannot map the
-reference genome because the breakpoint sequence does not exist in the reference
-genome. So, if we have an inversion in only one of the two alleles, then the
-reads coming from the allele with the inversion will not contribute to the local
-coverage at the breakpoint. The sequence in your target molecule exists only in
-one allele, so at the breakpoints you will only have reads contributing to the
-local coverage coming from one allele. The allele with the inversion will not
-have the
-
-AB sequence, but only the BA sequence. That's the why of the drop in the local
-coverage.
 
 Moreover, we can notice that the coverage on the middle part does not change
-significantly from the coverage on the sides. That suggest this is not either a
-gain or a deletion, the only thing that might have happened is an inversion.
-Therefore, the inversion is not biallelic (because we see DNA, the drop doesn't
-go to 0)
+significantly from the coverage on the sides.
 
-When you align reads against a genome, you can allow for a certain mismatches or
-partial alignment. So, if you impose certain thresholds to your aligner, you can
-also say that if there are reads that align for 80\% and have 20\% of sequences
-misaligned, you align them in any case. So you will have reads that are correct
-up to the breakpoints and the browser will shows the mismatches beyond the
-breakpoint. So, you can have a partial drop of coverage because you allow
-mismatches in your alignment.
+When you align reads against a genome, you can \underline{allow for a certain
+mismatches or partial alignment}. So, if you impose certain thresholds to your
+aligner, you can also say that if there are reads that align for 80\% and have
+20\% of sequences misaligned, you align them in any case. So you will have reads
+that are correct up to the breakpoints and the browser will shows the mismatches
+beyond the breakpoint. So, you can have a partial drop of coverage because you
+allow mismatches in your alignment.
 
 
 \hypertarget{tandem-duplication}{%
@@ -598,32 +625,32 @@ mismatches in your alignment.
 
 
 A segment of DNA is duplicated and inserted in the target molecule adjacent to
-the original one
+the original one.
 
 
-\includegraphics[width=6.1113in,height=2.55073in]{image23.jpeg}
+\includegraphics[width=6.1113in,height=2.55073in]{image23.jpeg}\\
 
+So, as result, the orientation instead of going inward goes outward.\\
 
-So, as result, the orientation instead of going inward goes outward.
-
-\includegraphics[width=6.22598in,height=4.14375in]{image24.jpeg}
+\includegraphics[width=6.22598in,height=4.14375in]{image24.jpeg}\\
 
 \emph{What do you expect to see from coverage?} We will have a gain in coverage
 that is proportional to the extra copy. We need to pay attention to the double
 because it is a double contribution of that allele, but if a tandem duplication
 happens only in one allele and the other allele has his own one copy, then the
 local coverage corresponding to the tandem duplication will be 3/2 of the
-expected coverage.
+expected coverage.\\
 
 If you have a read that maps BA, do you expect to see it in the mapped reads?
 Partial mapping. As we said before, if you allow your mapper to have some
 mismatches of a certain percentage of bases from your reads, you can still see
 some coverage contributed on one end of the segment and mismatches on the other
 side.
+% #TODO da riscrivere
 
-For what concern the junctions, you shouldn't see any difference of coverage
-because that sequence exists only once in the target molecule. The local
-coverage increases only in correspondence of the segment AB.
+For what concern the \underline{junctions}, you shouldn't see any difference of
+coverage because that sequence exists only once in the target molecule. The
+local coverage increases only in correspondence of the segment AB.
 
 
 \hypertarget{inverted-duplication}{%
@@ -631,47 +658,31 @@ coverage increases only in correspondence of the segment AB.
 
 
 The duplication is inverted but it's not located near the original fragment, but
-somewhere else
+somewhere else.
 
-\includegraphics[width=6.11483in,height=2.82187in]{image25.png}
-
-Take into consideration:
+\includegraphics[width=6.11483in,height=2.82187in]{image25.png}\\
 
 
-\begin{itemize}
-\item
-  overlapping of ``left'' and ``right'' reads on the reference genome
-\item
-  coverage depth (copy number)
-\end{itemize}
-
-\includegraphics[width=6.29059in,height=4.34375in]{image26.jpeg}
+\includegraphics[width=6.29059in,height=4.34375in]{image26.jpeg}\\
 
 
 There is a gain of coverage in the duplicated region and a tiny drop in the
-break points where the sequence exists in only one allele
+break points where the sequence exists in only one allele.
 
 
 \hypertarget{deletion}{%
 \subsection{Deletion}\label{deletion}}
 
 
-Deletion of a segment of DNA
+Deletion of a segment of DNA:
 
-If the deletion is larger than the size of the reads, we should see half of the
-coverage in the deleted regions
+\begin{itemize}
+  \item If the deletion \underline{is larger} than the size of the reads, we
+  should see half of the coverage in the deleted regions.
+  \item If the deletion \underline{is shorter} that the size of the reads, we
+  should see a tiny little space corresponding to the missing nucleotides.
 
-If the deletion is larger that the size of the reads, we should see a tiny
-little space corresponding to the missing nucleotides
+\end{itemize}
 
-Elements to consider:
 
-Pair ends relative orientation Insert size length
-
-Coverage within the aberrant region
-
-Coverage outside of the aberrant region (flanking genomic segments) Coverage at
-the breakpoints
-
-Ask yourself if the sequence exists and where it is
 
