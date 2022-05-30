@@ -1,86 +1,277 @@
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
 
-principal.synctex.gz
-notes/theory/exercise IGV/upload IGV_2022/pdf/IGV_SlideDeck.pdf
-notes/theory/exercise IGV/upload IGV_2022/pdf/IGV_Exercises.pdf
-notes/theory/exercise IGV/upload IGV_2022/pdf/DownloadAndLaunch_2019.pdf
-notes/theory/exercise IGV/upload IGV_2022/pdf/.DS_Store
-notes/theory/exercise IGV/upload IGV_2022/NA12878sub/NA12878.wgs.integrated_sv_map_v1.20130502.svs.genotypes.vcf
-notes/theory/exercise IGV/upload IGV_2022/NA12878sub/NA12878.mapped.ILLUMINA.bwa.CEU.high_coverage_pcr_free.RR.bam.fai
-notes/theory/exercise IGV/upload IGV_2022/NA12878sub/NA12878.mapped.ILLUMINA.bwa.CEU.high_coverage_pcr_free.RR.bam.bai
-notes/theory/exercise IGV/upload IGV_2022/NA12878sub/NA12878.mapped.ILLUMINA.bwa.CEU.high_coverage_pcr_free.RR.bam
-notes/theory/exercise IGV/upload IGV_2022/NA12878sub/NA12878.LUMPY.bedpe
-notes/theory/exercise IGV/upload IGV_2022/igvData/vcf/vcf_session.xml
-notes/theory/exercise IGV/upload IGV_2022/igvData/vcf/integrated_call_samples_v3.20130502.ALL.panel
-notes/theory/exercise IGV/upload IGV_2022/igvData/vcf/hg19_chr22.genome
-notes/theory/exercise IGV/upload IGV_2022/igvData/vcf/chr22.fa.fai
-notes/theory/exercise IGV/upload IGV_2022/igvData/vcf/chr22.fa
-notes/theory/exercise IGV/upload IGV_2022/igvData/vcf/apol1_snp131.bed
-notes/theory/exercise IGV/upload IGV_2022/igvData/vcf/ALL.apol1.sample.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf
-notes/theory/exercise IGV/upload IGV_2022/igvData/svs/svs_session.xml
-notes/theory/exercise IGV/upload IGV_2022/igvData/svs/NA19240_highcov.bam.bai
-notes/theory/exercise IGV/upload IGV_2022/igvData/svs/NA19240_highcov.bam
-notes/theory/exercise IGV/upload IGV_2022/igvData/svs/NA19240.bam.bai
-notes/theory/exercise IGV/upload IGV_2022/igvData/svs/NA19240.bam
-notes/theory/exercise IGV/upload IGV_2022/igvData/svs/hg38_chr21.genome
-notes/theory/exercise IGV/upload IGV_2022/igvData/svs/hg38.chr21.fa.fai
-notes/theory/exercise IGV/upload IGV_2022/igvData/svs/hg38.chr21.fa
-notes/theory/exercise IGV/upload IGV_2022/igvData/snps/snp_calls.bed
-notes/theory/exercise IGV/upload IGV_2022/igvData/snps/NA12878.SLX.sample.bam.tdf
-notes/theory/exercise IGV/upload IGV_2022/igvData/snps/NA12878.SLX.sample.bam.bai
-notes/theory/exercise IGV/upload IGV_2022/igvData/snps/NA12878.SLX.sample.bam
-notes/theory/exercise IGV/upload IGV_2022/igvData/snps/.foo.swp
-notes/theory/exercise IGV/upload IGV_2022/igvData/genome/refSeq_chr1.bed.fai
-notes/theory/exercise IGV/upload IGV_2022/igvData/genome/refSeq_chr1.bed
-notes/theory/exercise IGV/upload IGV_2022/igvData/genome/chr1.fasta.fai
-notes/theory/exercise IGV/upload IGV_2022/igvData/genome/chr1.fasta
-notes/theory/exercise IGV/upload IGV_2022/igvData/.DS_Store
-notes/theory/exercise IGV/upload IGV_2022/.DS_Store
-notes/theory/exercise IGV/upload IGV_2022.zip
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/pdf/._IGV_SlideDeck.pdf
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/pdf/._IGV_Exercises.pdf
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/pdf/._DownloadAndLaunch_2019.pdf
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/pdf/._.DS_Store
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/NA12878sub/._NA12878.wgs.integrated_sv_map_v1.20130502.svs.genotypes.vcf
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/NA12878sub/._NA12878.mapped.ILLUMINA.bwa.CEU.high_coverage_pcr_free.RR.bam.bai
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/NA12878sub/._NA12878.mapped.ILLUMINA.bwa.CEU.high_coverage_pcr_free.RR.bam
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/NA12878sub/._NA12878.LUMPY.bedpe
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/vcf/._vcf_session.xml
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/vcf/._integrated_call_samples_v3.20130502.ALL.panel
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/vcf/._hg19_chr22.genome
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/vcf/._chr22.fa.fai
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/vcf/._chr22.fa
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/vcf/._apol1_snp131.bed
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/vcf/._ALL.apol1.sample.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/svs/._svs_session.xml
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/svs/._NA19240_highcov.bam.bai
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/svs/._NA19240_highcov.bam
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/svs/._NA19240.bam.bai
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/svs/._NA19240.bam
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/svs/._hg38_chr21.genome
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/svs/._hg38.chr21.fa.fai
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/svs/._hg38.chr21.fa
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/snps/._snp_calls.bed
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/snps/._NA12878.SLX.sample.bam.tdf
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/snps/._NA12878.SLX.sample.bam.bai
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/snps/._NA12878.SLX.sample.bam
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/snps/._.foo.swp
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/genome/._refSeq_chr1.bed.fai
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/genome/._refSeq_chr1.bed
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/genome/._chr1.fasta.fai
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/genome/._chr1.fasta
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/._vcf
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/._svs
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/._snps
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/._genome
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/igvData/._.DS_Store
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/._pdf
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/._NA12878sub
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/._igvData
-notes/theory/exercise IGV/__MACOSX/upload IGV_2022/._.DS_Store
-notes/theory/exercise IGV/__MACOSX/._upload IGV_2022
-principal.aux
-principal.fdb_latexmk
-principal.fls
-principal.log
-principal.out
-principal.toc
+## Intermediate documents:
+*.dvi
+*.xdv
+*-converted-to.*
+# these rules might exclude image files for figures etc.
+# *.ps
+# *.eps
+# *.pdf
+
+## Generated if empty string is given at "Please type another file name for output:"
+.pdf
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Build tool directories for auxiliary files
+# latexrun
+latex.out/
+
+## Auxiliary and intermediate files from other packages:
+# algorithms
+*.alg
+*.loa
+
+# achemso
+acs-*.bib
+
+# amsthm
+*.thm
+
+# beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# changes
+*.soc
+
+# comment
+*.cut
+
+# cprotect
+*.cpt
+
+# elsarticle (documentclass of Elsevier journals)
+*.spl
+
+# endnotes
+*.ent
+
+# fixme
+*.lox
+
+# feynmf/feynmp
+*.mf
+*.mp
+*.t[1-9]
+*.t[1-9][0-9]
+*.tfm
+
+#(r)(e)ledmac/(r)(e)ledpar
+*.end
+*.?end
+*.[1-9]
+*.[1-9][0-9]
+*.[1-9][0-9][0-9]
+*.[1-9]R
+*.[1-9][0-9]R
+*.[1-9][0-9][0-9]R
+*.eledsec[1-9]
+*.eledsec[1-9]R
+*.eledsec[1-9][0-9]
+*.eledsec[1-9][0-9]R
+*.eledsec[1-9][0-9][0-9]
+*.eledsec[1-9][0-9][0-9]R
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.lzo
+*.lzs
+
+# uncomment this for glossaries-extra (will ignore makeindex's style files!)
+# *.ist
+
+# gnuplottex
+*-gnuplottex-*
+
+# gregoriotex
+*.gaux
+*.gtex
+
+# htlatex
+*.4ct
+*.4tc
+*.idv
+*.lg
+*.trc
+*.xref
+
+# hyperref
+*.brf
+
+# knitr
+*-concordance.tex
+# TODO Comment the next line if you want to keep your tikz graphics files
+*.tikz
+*-tikzDictionary
+
+# listings
+*.lol
+
+# luatexja-ruby
+*.ltjruby
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+
+# minitoc
+*.maf
+*.mlf
+*.mlt
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+# minted
+_minted*
+*.pyg
+
+# morewrites
+*.mw
+
+# nomencl
+*.nlg
+*.nlo
+*.nls
+
+# pax
+*.pax
+
+# pdfpcnotes
+*.pdfpc
+
+# sagetex
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+
+# scrwfile
+*.wrt
+
+# sympy
+*.sout
+*.sympy
+sympy-plots-for-*.tex/
+
+# pdfcomment
+*.upa
+*.upb
+
+# pythontex
+*.pytxcode
+pythontex-files-*/
+
+# tcolorbox
+*.listing
+
+# thmtools
+*.loe
+
+# TikZ & PGF
+*.dpth
+*.md5
+*.auxlock
+
+# todonotes
+*.tdo
+
+# vhistory
+*.hst
+*.ver
+
+# easy-todo
+*.lod
+
+# xcolor
+*.xcp
+
+# xmpincl
+*.xmpi
+
+# xindy
+*.xdy
+
+# xypic precompiled matrices and outlines
+*.xyc
+*.xyd
+
+# endfloat
+*.ttt
+*.fff
+
+# Latexian
+TSWLatexianTemp*
+
+## Editors:
+# WinEdt
+*.bak
+*.sav
+
+# Texpad
+.texpadtmp
+
+# LyX
+*.lyx~
+
+# Kile
+*.backup
+
+# gummi
+.*.swp
+
+# KBibTeX
+*~[0-9]*
+
+# TeXnicCenter
+*.tps
+
+# auto folder when using emacs and auctex
+./auto/*
+*.el
+
+# expex forward references with \gathertags
+*-tags.tex
+
+# standalone packages
+*.sta
+
+# Makeindex log files
+*.lpz
+

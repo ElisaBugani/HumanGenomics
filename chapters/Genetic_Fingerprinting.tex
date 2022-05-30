@@ -11,7 +11,7 @@ DNA fingerprinting is applied in different fields:
 
 \begin{itemize}
 	\item In \textbf{Forensic}, for identification purposes;
-	\item In l\textbf{ineage related tests}, for cells or humans. Eg. pternity
+	\item In \textbf{lineage related tests}, for cells or humans. Eg. pternity
 	test, hereditary tests.
 	\item For the certification of the \textbf{origin of cells used in the
 	laboratory}, to make sure that the cells are the right ones and that there
@@ -140,20 +140,20 @@ disequilibrium and represents a group of SNPs (called haplotype).
 \subsection{Other SNPs features} 
 \begin{itemize}
 	\item Choose SNPs that are in areas that are not likely to undergo somatic
-	aberrations. So exclude chromosomal locations which undergo frequent somatic
-	aberrations. Eg. areas commonly deleted in tumor will produce LOH but
-	probably also no calls, since there is no DNA. 
-	\item Choose SNPs equally represented/spread all around the genome (not in
-	specific chromosome regions).
-	\item Select autosomal only SNPs (not on chromosome X).
-	\item Select SNPs in exons. If we were to run a targeted assay, this would
-	cover more exons instead of intrones. It will also be more probable to have
-	signal from a non-DNA assay, for example if calling a genotype from RNA
-	sequencing data (even though it is not always done).
-	\item Exclude/include disease or drug response associated loci. 
-	\item Include/exclude loci with significantly different MAF in different
-	ethnicity. If we include them we can also have a lineage type of tests in
-	the same assay. 
+	aberrations. So \underline{exclude chromosomal locations which undergo
+	frequent somatic aberrations}. Eg. areas commonly deleted in tumor will
+	produce LOH but probably also no calls, since there is no DNA. 
+	\item Choose \underline{SNPs equally represented}/spread all around the
+	genome (not in specific chromosome regions).
+	\item Select \underline{autosomal only SNPs}.
+	\item Select \underline{SNPs in exons}. If we were to run a targeted assay,
+	this would cover more exons instead of intrones. It will also be more
+	probable to have signal from a non-DNA assay, for example if calling a
+	genotype from RNA sequencing data (even though it is not always done).
+	\item Exclude/include \underline{disease or drug response associated loci}. 
+	\item Include/exclude loci with significantly \underline{different MAF in
+	different ethnicity}. If we include them we can also have a lineage type of
+	tests in the same assay. 
 \end{itemize}
 
 
@@ -179,30 +179,37 @@ dependent.
 
 \paragraph{Some examples:}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{SNP_number.PNG}
-	\caption{\label{fig:SNP_number}}
+	\caption{'A' stands for 'AA' (e.g. homozygus genotype for the reference
+	allele); often refered to as Aa. 'B' stands for 'BB' (e.g. homozygus
+	genotype for the alternative allele); often refered to as Bb. 'AB' stads for
+	heterozygus.}
+	\label{fig:SNP_number}  
 \end{figure}
 
 In each example in figure \ref{fig:SNP_number} there are two samples with the
-same number of potential SNPs: 24. To detemine the difference/similarity of the
-two samples we can look at the genotype for each position and count mismatches.
+same number of potential SNPs: 24. To detemine the difference/similarity
+(concordance) of the two samples we can look at the genotype for each position
+and count mismatches.
 
 Legend: 'A' stands for 'AA' (e.g. homozygus genotype for the reference allele);
 often refered to as Aa. 'B' stands for 'BB' (e.g. homozygus genotype for the
 alternative allele); often refered to as Bb. 'AB' stads for heterozygus.
 
 \begin{itemize}
-	\item First Example: over the 24 loci, there is only one mismatch. This
-	translates to a level of concordance of 95.8\%. Those 2 individuals are
-	highly related or DNA comes from the same saples.    
-	\item Second example: there is only one mismatch but there are some 'na',
-	indicating that for some positions we don't have a call (not available
+	\item \textbf{First Example}: over the 24 loci, there is only one mismatch.
+	This translates to a level of concordance of 95.8\%. Those 2 individuals are
+	highly related or DNA comes from the same saples. 
+	   
+	\item \textbf{Second example}: there is only one mismatch but there are some
+	'na', indicating that for some positions we don't have a call (not available
 	data). Therefore, in this case the concordance is measured out of 22 SNPs
 	and is equal 95.4\%. 
-	\item Third example: here a lot of nas are present, leading to have only 12
-	SNPs available. This brings to a concordance of 100\%. 
+
+	\item \textbf{Third example}: here a lot of 'na's are present, leading to
+	have only 12 SNPs available. This brings to a concordance of 100\%. 
 \end{itemize}
 
 Different examples produced different levels of concordance. What do we trust
@@ -217,16 +224,22 @@ information.
 In the context of desease samples and tumors, many somatic events can happen,
 like deletions, gains of copies, homozygus deletions, ecc. Some common ones are:
 \begin{itemize}
-	\item  Loss Of Heterozygosity (LOH):  event that results in loss one
-	parental copy of a region which results in the genome having just one copy
-	of that region. If that region contained a heterozygus locus (e.g. SNP),
-	there will be loss of Heterozygosity.  
-	
-	AB -> A.
-	\item Gain Of Heterozygosity (GOH): due to a mutation in a site often
-	polimorphic through inheritance. These are pretty rare. A -> AB. 
-	\item Double Mutation (DM): very rare.  
+	\item  \textbf{Loss Of Heterolzygosity (LOH)}:  event that results in loss
+	one parental copy of a region which results in the genome having just one
+	copy of that region. If that region contained a heterozygus locus (e.g.
+	SNP), there will be loss of Heterozygosity. $AB \rightarrow A$.
+	\item \textbf{Gain Of Heterozygosity (GOH)}: due to a mutation in a site
+	often polimorphic through inheritance. These are pretty rare. $A \rightarrow
+	AB$. 
+	\item \textbf{Double Mutation (DM)}: very rare.  
 \end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{heterozygosity.PNG}
+	\caption{} 
+	\label{fig: heterozygosity}
+\end{figure}
 
 \bigskip
 Biological mismatches can be properly modeled in our assay. We can, in a data
@@ -244,44 +257,49 @@ allow to identify individuals.
 Having defined the number of SNPs to use, with maximum MAF and other amanable
 characteristics, the genetic test should provide a measure of some sort, which
 will be the output metric, associated with a probability of the measure to be
-correct. 
+correct. \\
 
-As a simple measure, we can count the number of loci where two samples show
-different genotype and normalize on the total number of queried loci, defining a
-certain level of discordance (or concordance). The output value will be the
-'genetic distance' between the two samples given the selected loci. The distance
-is proportional to the number of discordant calls.
+As a simple measure, we can \underline{count the number of loci where two
+samples show different genotype} and normalize on the total number of queried
+loci, defining a certain level of discordance (or concordance). The output value
+will be the '\textit{genetic distance}' between the two samples given the
+selected loci. The distance is proportional to the number of discordant calls.
+\\
 
 In figure \ref{fig:Distance} we can see an example of a typical graph used to
 measure the genetic distance using SNP-based genetic testing. We have 4 samples
 with a set of 5 SNPs for each one. The distance is measured among all possible
 pairs, whose indexes are reported on the x-axis. 
+
 \begin{itemize}
 	\item s1 and s2 have 3 A in common, one locus has no call and another one
 	produces a mismatch. 1 mismatch out of 4 produce a distance of 0.25.
-	\item samples s1 and s2 have 5 mismatches out of 5, so a distance (or
+	\item samples s1 and s3 have 5 mismatches out of 5, so a distance (or
 	discordance) of 1. 
 \end{itemize}
 
-% figura
-\begin{figure}
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Distance.PNG}
-	\caption{\label{fig:Distance}Genetic Distance graph with 4 samples}
+	\caption{Genetic Distance graph with 4 samples}
+	\label{fig:Distance} %#TODO metti label sotto caption
 \end{figure}
 
-If we put that into an equation will have that: for each position i (SNP)
-bwteeen sample 1 and 2 we can have 1 if the genotype is different, 0 if they are
-identical. Then we determine the distance D by summing up the different scores
-obtained for each SNP. We can associate different weights $w_i$ to different
-mismatches or we can put all equal to one. Then we devide by the total number of
-SNPs for which we have available calls, vNSNPs, which will be lower or equal to
-the total number of SNPs, NSNPs. 
+If we put that into an equation in \ref{fig:Distance} will have that: for each
+position $i$ (SNP) bwteeen sample 1 and 2 we can have 1 if the genotype is
+different, 0 if they are identical. Then we determine the distance D by summing
+up the different scores obtained for each SNP. We can associate different
+weights $w_i$ to different mismatches (depending on Gain Of Heterolzygosity,
+Loss Of Heterolzygosity, Double Mutation) or we can put all equal to one. Then
+we devide by the total number of SNPs for which we have available calls vNSNPs
+for both the sequences in comparison, which will be lower or equal to the total
+number of SNPs, NSNPs. 
 
-%
-\begin{figure}
+
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Distance2.PNG}
+	\includegraphics[width=0.9\textwidth]{Distance2.PNG}
 	\caption{\label{fig:Distance2}Genetic Distance graph with 160 samples}
 \end{figure}
 
@@ -289,25 +307,27 @@ the total number of SNPs, NSNPs.
 This other example at figure \ref{fig:Distance2} shows the distance, measured by
 genetic fingerprinting, of a collection of 160 samples of cell lines. 
 
-The number of possible pairs corresponds to: 160  159 / 2 (number found in the
-x-axis). 
+The number of possible pairs corresponds to: $\frac{160 \cdot 159}{2}$ (number
+found in the x-axis). 
 
 By applying this measure to a larger collection of samples like this one, with
 many SNPs, we expect to find an \textbf{average distance} among all possible
-pairs that very unlikely will be close to 1. The MAF of the SNPs is 0.5 but it
-will never happen that, with a high number of SNPs, the discordance will be 1.
-We will have an average distance that in this case around 0.5, since by chance
-we all share some genotypes on a large number of SNPs. 
+pairs that very unlikely will be close to 1. 
+
+The MAF of the SNPs is 0.5 but it will never happen that, with a high number of
+SNPs, the discordance will be 1, meaning that the SNPs will be all different. We
+will have an average distance that in this case around 0.5, since by chance we
+all share some genotypes on a large number of SNPs. 
 
 Here they found certain pairs with a very low distance, sometimes almost equal
 to zero (dots at the bottom). This was a surprising result because it shows that
 those pairs, which were suppose to be different cell lines, were actually not
 different cell lines (only less than 70\% of SNPs have available calls). 
 
-% immagine slide 19
-\begin{figure}
+
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Distance3.PNG}
+	\includegraphics[width=0.9\textwidth]{Distance3.PNG}
 	\caption{\label{fig:Distance3}Genetic Distance graph with tumor samples}
 \end{figure}
 
@@ -320,32 +340,33 @@ From the analysis, two samples with very low distance were observed. One of the
 two samples came from a Rapid Autopsy Progam and the other one from a xenograft
 model. 
 
-RAP are programs for which patients at the end of their life agree to donate
-their tumor tissues which can be used for research. In these very complex but
-highly valuable programs, the material must be taken within two hours after
-death. Those sample are usually higly caractherized but after a while the track
-of the patient's identity is lost. Here, what happened is that one man who
-donated tissue by this program was sequenced and for some of those metastasis
-models were generated and implanted into a mouse and a xenograft model was
-derived. Thanks to fingerprinting it was possible to determine the same origin
-between xenograft and patient. 
+\underline{RAP} are programs for which patients at the end of their life agree
+to donate their tumor tissues which can be used for research. In these very
+complex but highly valuable programs, the material must be taken within two
+hours after death. Those samples are usually higly caractherized but after a
+while the track of the patient's identity is lost. Here, what happened is that
+one man who donated tissue to this program was sequenced and for some of those
+metastasis models were generated and implanted into a mouse and a xenograft
+model was derived. Thanks to fingerprinting it was possible to determine the
+same origin between xenograft and patient. 
 
 The power of this tecnique is very high, it allows also to identify and remove
 things that we don't want in our study. Eg. if running a study (like a GWAS
-study) on a certain interesting geopraphic area, we will want to remove the
-members of the same family because that would skew the results. Genetic
-fingerprint can be used for this purpose.
+study) on a certain \underline{interesting geopraphic area}, we will want to
+remove the members of the same family because that would skew the results.
+Genetic fingerprint can be used for this purpose.
 
 \subsection{Some questions}
 
-\textbf{Q1}: Would the average of unrelated samples distance increase or
-decrease after selection of ideal SNPs?
+\noindent\textbf{Q1}: \textbf{\textit{Would the average of unrelated samples
+distance increase or decrease after selection of ideal SNPs?}}\\
 
-If we maximize the likelihood that SNPs have a different genotype among
-individuals and we use these to determine the measure, then the average distance
-of unrelated individuals will increase.
+If we use SNPs likely to be different among individuals and we use them to
+determine the measure of the ditance, then the average value of unrelated
+individuals will increase.\\
 
-\textbf{Q2}: Is it likely to obtain a genotype distance D = 1?
+\noindent\textbf{Q2}: \textbf{\textit{Is it likely to obtain a genotype distance
+D = 1?}}\\
 
 We get distance 1 only if we are looking at too few viable SNPs. Whereas with a
 well selected pool of SNPs, and a high enough number of SNPs, it is very
@@ -355,24 +376,23 @@ unlikely that the distance is equal to 1.
 How does the genetic distance among different samples change when varying the
 number of selected SNPs used to perform the test?
 
-% immagine slide 26
-\begin{figure}
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Selected_SNP.PNG}
-	\caption{\label{fig:sel_snp}Genetic Distance graph at deacreasing number of
-	selected SNPs}
+	\includegraphics[width=1\textwidth]{Selected_SNP.PNG}
+	\caption{Genetic Distance graph at deacreasing number of selected SNPs}
+	\label{fig:sel_snp}
 \end{figure}
 
 The genetic distance among many samples, with an array of 5.3K SNPs, was
 measured, using a decreasing number of SNPs (from the initial total number of
-SNPs to decreasing numbers of highly selected SNPs) \ref{fig:sel_snp}. 
+SNPs to decreasing numbers of highly selected SNPs) \ref{fig:sel_snp}. \\
 
 It is noticeable that, in the second plot where 80 SNPs matching the required
 characteristics were selected, the average Distance across all pairs is higher
-than in the previous example, in which all available SNPs were used (~0.45 vs.
-~0.65). Also, the standard deviation of greater. Decreasing the number of SNPs
-to 60, then to 40 and 20 leads to have the same average distance between pairs,
-which settles around 0.66, but higher standard deviation.
+than in the previous example, in which all available SNPs were used ($\sim 0.45$
+vs. $\sim 0.65$). Also, the standard deviation of greater. Decreasing the number
+of SNPs to 60, then to 40 and 20 leads to have the same average distance between
+pairs, which settles around 0.66, but higher standard deviation.
 
 In reality we always need enough SNPs, enough information, in order to prevent
 unexpected issues and to be sure that for any pairs of sample we have enough
@@ -406,49 +426,62 @@ following ones.
 Other important questions which we have to answer to when designing a genetic
 test are:
 \begin{itemize}
-	\item What is the threshold on the genotype distance to call two samples
-	'identical' ('similar') or'different'?
-	\item How confident would the call be?
-    \item What is the minimum number of loci needed for a robust test?
+	\item What is the \textit{threshold} on the genotype distance to call two
+	samples 'identical' ('similar') or 'different'?
+	\item How \textit{confident} would the call be?
+    \item What is the \textit{minimum number} of loci needed for a robust test?
 \end{itemize}
 
 It could be useful to have a probabilistic test to determine if the measure of
-the test is correct at with which level of confidence. We can use a
-probabilistic approach to compare observations with expectations (gold
-standard).
+the test is correct at which level of confidence. We can use a probabilistic
+approach to compare observations with expectations (gold standard).
 
 \bigskip
 Under the assumption that SNP calls at different loci are independent, we can
 think in terms of Binomial distribution. Each SNP can be considered as a trial,
-n = number of SNPs in the assay, k = number of matches, p is the probability of
-match and (1-p) of mismatch. Then the probability of having k matches
-(successes) out of N SNPs (trials) follows the binomial distribution.
 
-With n, np and np(1-p) large enough, we can use the Gaussian approximation of
-the Binomial distribution with $K_{mean}$ = np and sd = np(1-p). 
+\begin{itemize}
+	\item $n$ = number of SNPs in the assay, 
+	\item $k$ = number of matches, 
+	\item $p$ is the probability of match and ($1-p$) of mismatch.
+\end{itemize}
+
+Then the probability of having k matches (successes) out of N SNPs (trials)
+follows the binomial distribution. With $n$, $np$ and $np(1-p)$ large enough, we
+can use the \textbf{Gaussian approximation} of the Binomial distribution with
+$K_{\text{mean}} = np$ and $sd = \sqrt{np(1-p)}$. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{binomialDistSNPsmatches.PNG}
+	\caption{\label{fig:binomial distribution SNP matches}}
+\end{figure}
 
 With something that simple we can add a probabilistic test in our assay,
-defining an area of conficence given by $K_{mean} \pm m  sd$ where m is the
-number of standard deviations used to define the thresholds which will lead to
-have a smaller or wider confidence area. 
+defining an area of confidence given by $K_{\text{mean}} \pm m \cdot sd$ where m
+is the number of standard deviations used to define the thresholds which will
+lead to have a smaller or wider confidence area. 
 
 %immagine slide 33
-\begin{figure}
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Prob_test.PNG}
+	\includegraphics[width=0.9\textwidth]{Prob_test.PNG}
 	\caption{\label{fig:prob_test}}
+	% #TODO not pair populations? paired populations?
 \end{figure}
 
 \bigskip
-So for example: given two unrelated samples, we reason in terms of 'what is the
-probability of having a certain number k of matches over a total number of n
-SNPs, therefore a certain value of D?'. 
+So for example: given two unrelated samples, we reason in terms of '\textit{what
+is the probability of having a certain number k of matches over a total number
+of n SNPs, therefore a certain value of D?}'. \\
 
 The probability mass function for unrelated individuals is shown in figure
 \ref{fig:prob_test} with a blue dotted line and indicates that there is a low
-probability of having both a very low and a very high number of matches. 
+probability of having both a very low and a very high number of matches (it is
+assumed that the comparisons of samples follow a binomial distribution, where
+higher and lower values, compared to the mean, have less likely). 
 
-We can also think in the opposite term: given two related samples, what is the
+\noindent We can also think in the opposite term: given two related samples, what is the
 probability of having  matches? As represented by the red dotted line, in this
 case there will be a high probability of having many matches. 
 
@@ -515,7 +548,7 @@ set on only 54 SNPs, this diversity is not detectable, indicating  that using
 the perfect number of SNPs could make us loose some information. 
 
 % immagine slide 39 e 40 con width = 0.4 le mette affiancate 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{cell_lines_1.PNG}\quad\includegraphics[width=0.5\textwidth]{cell_lines_2.PNG}
 	\caption{\label{fig: cell_lines}}
@@ -539,7 +572,7 @@ major information for haplotype blocks, for identifying regions related to
 inheritance, ecc. 
 
 % immagine slide 43
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width = 0.7\textwidth]{trios.PNG}
 	\caption{\label{fig: trios}}
@@ -629,7 +662,7 @@ informative SNPs for specific region-related inheritance, they were able to
 rebuild the map of some of the countries in Europe \ref{fig:PCA_countries}. 
 
 % immagine paper 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{PCA.PNG}
 	\caption{\label{fig:PCA_countries}}
@@ -647,7 +680,7 @@ typical of that area and are therefore able to maximize the difference with
 respect to that area (so it is a data-related 'issue').
 
 % immagine 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{PCA_swiss.PNG}
 	\caption{\label{fig: PCA_swiss}}
