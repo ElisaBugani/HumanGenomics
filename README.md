@@ -7,6 +7,7 @@ Genomics course held by Demichelis Francesca 2021/2022.
 - reorder lessons basics and tumor evolution studies II.
 - adjust basic errors in latex compiling.
 - read Wall, Jeffrey D., and Jonathan K. Pritchard. 2003. “Haplotype Blocks and Linkage Disequilibrium in the Human Genome.” Nature Reviews Genetics 4 (8): 587–97. https://doi.org/10.1038/nrg1123 (Fingerprint).
+- Last part Liquid Biopsies
 
 
 
