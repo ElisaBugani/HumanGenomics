@@ -20,7 +20,7 @@ DNA fingerprinting is applied in different fields:
 \end{itemize}
 
 
-\subsection{Variants used for genetic testing}
+\textbf{Variants used for genetic testing}
 
 There are different variants that can be used for genetic fingerprinting, such
 as Single Nucleotide Polimorfisms (SNPs) or inherited Copy Number Variations
@@ -123,13 +123,14 @@ with \emph{linkage disequilibrium plots} \ref{fig:LD_plot}. In these plots, SNPs
 are represented in a way that does not respect the genomic distance, but the
 order along the genome (position of each SNP relative the others). \\
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.95\textwidth]{LD_plot.PNG}
 	\caption{Linkage disequilibrium plot.} 
 	% #TODO come andrebbe letta esattamente?
 	\label{fig:LD_plot}
 \end{figure}
+
 
 In figure \ref{fig:LD_plot}, the colors indicate the strenght of pairwise
 linkage disequilibrium (LD) according to r2 metrics. Tag SNPs are shadowed in
@@ -179,7 +180,7 @@ dependent.
 
 \paragraph{Some examples:}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\textwidth]{SNP_number.PNG}
 	\caption{'A' stands for 'AA' (e.g. homozygus genotype for the reference
@@ -234,7 +235,7 @@ like deletions, gains of copies, homozygus deletions, ecc. Some common ones are:
 	\item \textbf{Double Mutation (DM)}: very rare.  
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.75\textwidth]{heterozygosity.PNG}
 	\caption{} 
@@ -279,9 +280,9 @@ pairs, whose indexes are reported on the x-axis.
 \end{itemize}
 
 
-\begin{figure}[H]
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Distance.PNG}
+	\includegraphics[width=1\textwidth]{Distance.PNG}
 	\caption{Genetic Distance graph with 4 samples}
 	\label{fig:Distance} %#TODO metti label sotto caption
 \end{figure}
@@ -297,7 +298,7 @@ for both the sequences in comparison, which will be lower or equal to the total
 number of SNPs, NSNPs. 
 
 
-\begin{figure}[H]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Distance2.PNG}
 	\caption{\label{fig:Distance2}Genetic Distance graph with 160 samples}
@@ -325,7 +326,7 @@ those pairs, which were suppose to be different cell lines, were actually not
 different cell lines (only less than 70\% of SNPs have available calls). 
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Distance3.PNG}
 	\caption{\label{fig:Distance3}Genetic Distance graph with tumor samples}
@@ -376,7 +377,7 @@ unlikely that the distance is equal to 1.
 How does the genetic distance among different samples change when varying the
 number of selected SNPs used to perform the test?
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=1\textwidth]{Selected_SNP.PNG}
 	\caption{Genetic Distance graph at deacreasing number of selected SNPs}
@@ -451,10 +452,25 @@ follows the binomial distribution. With $n$, $np$ and $np(1-p)$ large enough, we
 can use the \textbf{Gaussian approximation} of the Binomial distribution with
 $K_{\text{mean}} = np$ and $sd = \sqrt{np(1-p)}$. \\
 
-\begin{figure}[H]
+
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\textwidth]{binomialDistSNPsmatches.PNG}
-	\caption{\label{fig:binomial distribution SNP matches}}
+	\begin{subfigure}[t]{0.80\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{binomialDistSNPsmatches.PNG}
+		\caption{The probability binomial distribution could be approximated to a Gaussian when the number of cases is large}
+		% \label{subfig: }
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.80\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{gaussianity-binomialdist.PNG}
+		\caption{Percentages Gaussian distribution}
+		% \label{subfig: }
+	\end{subfigure}
+	\caption{Approximation of a binomial distribution to a Gaussian and
+	percentages related.}
+	\label{fig: binomial distribution SNP matches}
 \end{figure}
 
 With something that simple we can add a probabilistic test in our assay,
@@ -463,34 +479,35 @@ is the number of standard deviations used to define the thresholds which will
 lead to have a smaller or wider confidence area. 
 
 %immagine slide 33
-\begin{figure}[H]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Prob_test.PNG}
 	\caption{\label{fig:prob_test}}
-	% #TODO not pair populations? paired populations?
+	% #TODO not pair populations? paired populations? Don't understand the
+	% meaning of these things
 \end{figure}
 
-\bigskip
-So for example: given two unrelated samples, we reason in terms of '\textit{what
-is the probability of having a certain number k of matches over a total number
-of n SNPs, therefore a certain value of D?}'. \\
 
-The probability mass function for unrelated individuals is shown in figure
-\ref{fig:prob_test} with a blue dotted line and indicates that there is a low
-probability of having both a very low and a very high number of matches (it is
-assumed that the comparisons of samples follow a binomial distribution, where
+\bigskip
+So for example: given two unrelated samples, we reason in terms of  
+'\textit{what is the probability of having a certain number $k$ of matches over
+a total number of n SNPs, therefore a certain value of D?}'.\\
+\noindent The probability mass function for unrelated individuals is shown in
+figure \ref{fig:prob_test} with a blue dotted line and indicates that there is a
+low probability of having both a very low and a very high number of matches (it
+is assumed that the comparisons of samples follow a binomial distribution, where
 higher and lower values, compared to the mean, have less likely). 
 
-\noindent We can also think in the opposite term: given two related samples, what is the
-probability of having  matches? As represented by the red dotted line, in this
-case there will be a high probability of having many matches. 
+\noindent We can also think in the opposite term: given two related samples,
+what is the probability of having  matches? As represented by the red dotted
+line, in this case there will be a high probability of having many matches. 
 
 Using these probabilities we can set two thresholds which will define 3 regions:
 \begin{itemize}
 	\item A \textbf{'not pair'} region for which the two samples will be
-	considered as 'different'
+	considered as 'different'.
  	\item a \textbf{'pair'} region for which the two samples will be considered
- 	as 'similar'
+ 	as 'similar'.
 	\item and an \textbf{'uncertain'} region, a grey zone, for which no certain
 	result can be produced. 
 \end{itemize}
@@ -509,50 +526,76 @@ otherwise there will be many uncertain calls.
 
 \section{Further considerations and examples}
 %sistemare
-In the past, before sequencing area and SNPs array area, short tandem repeats
-were commonly used for genetic fingerprint. They were used on gels to
+In the past, before sequencing area and SNPs array area, \underline{short tandem
+repeats} were commonly used for genetic fingerprint. They were used on gels to
 distinguish related and unrelated individuals, eg, for the initial paternity
-test. 
+test.\textbf{ Di-nucleotide markers} are the most informative class of
+microsatellites. Generally they are more informative than SNPs, though selected
+SNPs perform quite well.\\
 
 \textbf{Inherited copy number variants} can be used too for a fingerprinting
 test, but not all of them. The more amenable for this test are the loss type of
 CNV. In the population there will either a copy number of 2 or 1 or 0. If both
 parents have heterozygus pair of CNVs it will be possible that I have a
 homozygus deletion. If both parents have 2 copies at a site that is polimorphic
-in the population, we will have a genotype equal to 2 copies. 
+in the population, we will have a genotype equal to 2 copies. \\
 
-If we think about gain of CNV then it becomes messy, because when combining
-multiple copies and have a add up we cannot distinguish what comes from what
-pair, so we cannot use them to identify an individual.
+If we think about \textbf{gain} of CNV then it becomes messy, because when
+combining multiple copies and have a add up we cannot distinguish what comes
+from what pair, so we cannot use them to identify an individual.
 
 
 \subsection{Example 1: Cell line passages}
 
-A mass use of these genetic tests is done to assess genetic changes in in-vitro
-cultivation (also, in studies in tumor evolution, lineage plasticity,
-etherogenity across metastasis across individuals or a single tumor). Cell lines
-go through multiple passages in which they are used and stored. Genetic
-fingerprinting can be used to assess if among different passages the cells have
-remained the same, if they were mislabeled or if major genetic drifts happened.
+A mass use of these genetic tests is done to assess \textbf{genetic changes in
+in-vitro cultivation}. Cell lines go through multiple passages in which they are
+used and stored. Genetic fingerprinting can be used to assess if among different
+passages the cells have remained the same, if they were mislabeled or if major
+genetic drifts happened. Genetic fingerptinting is also used in studies of tumor
+evolution, lineage plasticity, etherogenity across metastasis across individuals
+or a single tumor. 
 
-In this example, two types of prostate cell lines which underwent multiple
-passagges were used: N15C6 (passages from 48 to 63) and N33B2 (passages from 21
-to 39). The cell lines were profiled with a SNPs array and the assay was run.
-All passages of each cell lines were compared with all other passages. We expect
-all passages to have the same genetic fingerprinting in the same cell line.  
+% #TODO add to definitions
+\textit{Lineage plasticity}, the ability of cells to transition from one
+committed developmental pathway to another, has been proposed as a source of
+intratumoural heterogeneity and of tumour adaptation to an adverse tumour
+microenvironment including exposure to targeted anticancer treatments.
 
-However the results obtained using the full array of SNPs (50k), showed that
-some pairs which should be exactly identical (distance equal to zero) are
-actually a bit different (points at the bottom-left). By contrast, by using a
-set on only 54 SNPs, this diversity is not detectable, indicating  that using
-the perfect number of SNPs could make us loose some information. 
+In this example (figure \ref{fig: cell lines comparison}), two types of prostate cell lines
+which underwent multiple passagges were used: \textit{\textbf{N15C6}} (passages
+from 48 to 63) and \textit{\textbf{N33B2}} (passages from 21 to 39). The cell
+lines were profiled with a SNPs array and the assay was run. All passages of
+each cell lines were compared with all other passages. We expect all passages to
+have the same genetic fingerprinting in the same cell line.\\ 
 
-% immagine slide 39 e 40 con width = 0.4 le mette affiancate 
-\begin{figure}[h]
+However the results obtained using the \textbf{full array of SNPs (50k)}
+(subfigure \ref{subfig: 50k SNPs}), showed that some pairs which should be
+exactly identical (distance equal to zero) are actually a bit different 
+% #TODO shouldn't it be correct?
+(points at the bottom-left). By contrast, by using a set on only 54 SNPs
+(subfigure \ref{subfig: 54 SNPs}), this diversity is not detectable, indicating
+that using the restricted number of SNPs could make us loose some information. 
+
+% #TODO ???
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{cell_lines_1.PNG}\quad\includegraphics[width=0.5\textwidth]{cell_lines_2.PNG}
-	\caption{\label{fig: cell_lines}}
+	\begin{subfigure}[t]{0.80\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{50Kchip.PNG}
+		\caption{Comparing passages with the total amount of available SNPs}
+		\label{subfig: 50k SNPs}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.80\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{54SNPchip.PNG}
+		\caption{Comparing passages with 54 SNPs}
+		\label{subfig: 54 SNPs}
+	\end{subfigure}
+	\caption{}
+	\label{fig: cell lines comparison}
 \end{figure}
+
 
 In order to understand this increase of distance, they looked at each chromosome
 to see if there were problems that justified increase the increased distance
@@ -560,92 +603,109 @@ expected to be equal to zero in that cell line. All chromosome were tried. If we
 focus only on the SNPs spread across Chromosome 11, we observe that there is a
 major difference for certain passages with respect to the initial ones, only for
 one cell line (N15C6). This was due to the way the cells were immortalized
-(insertion in chromosome 11).
+(insertion in chromosome 11), look to figure \ref{fig: chr 11 SNPs}.
+
+\begin{figure}[ht]
+	\caption{Comparison passages regarding chr 11}
+	\centering
+	\includegraphics[width=0.8\textwidth]{chr11chip.PNG}
+	\label{fig: chr 11 SNPs}
+  \end{figure}
 
 
 \subsection{Individual's Relatedness (genotype-distance)}
 
 The HapMap consortium sequenced hundreds of individuals for different
-ethnicities and also used trios. Trio sequencing is a technique which involves
-the sequencing of the genome of mother, father and son/daughter. Trios provide
-major information for haplotype blocks, for identifying regions related to
-inheritance, ecc. 
+ethnicities and also used trios. \textbf{Trio sequencing} is a technique which
+involves the sequencing of the genome of \underline{mother, father and
+son/daughter}. Trios provide major information for haplotype blocks, for
+identifying regions related to inheritance, ecc.
 
 % immagine slide 43
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width = 0.7\textwidth]{trios.PNG}
+	\includegraphics[width = 1\textwidth]{trios.PNG}
 	\caption{\label{fig: trios}}
 \end{figure}
 
-By looking at the data based on SPIA Assay (a genotype base assay which measures
-distance) at figure \ref{fig: trios} we see that self-self pairs have distance
-zero, as expected; samples within each ethnicity have a certain average
-distance, which is lower that the distance observed among different ethnicities.
-Differences in distance among mixed samples are due to the fact that the SNPs
-used had on average higher MAF in some populations than in others. We also
-notice that in trios the distance is not 0 and is not equal to the median
-distance of unrelated individuals. This can be used for paternity tests or even
-in forensic science.
+By looking at the data based on \textit{SPIA Assay} (subsection \ref{subsect:
+SPIA}) (a genotype base assay which measures distance) at figure \ref{fig:
+trios} we see that self-self pairs have distance zero, as expected; samples
+within each ethnicity have a certain average distance, which is lower than the
+distance observed among different ethnicities. Differences in distance among
+mixed samples are due to the fact that the SNPs used had on average higher MAF
+in some populations than in others. \\
+\noindent We also notice that in trios the distance is not 0 and is not equal to
+the median distance of unrelated individuals. This can be used for paternity
+tests or even in forensic science (figure \ref*{fig: Relatedness of
+individuals}).
+
+\begin{figure}[ht]
+  \caption{Relatedness between individuals can be evaluated through SNPs}
+  \centering
+  \includegraphics[width=0.60\textwidth]{IndividualsRelatedness.PNG}
+  \label{fig: Relatedness of individuals}
+\end{figure}
+
+% #TODO have to clarify figure page 42
 
 \subsection{Example 3: Cancer supscettibility test}
+% #TODO to which data are you referring?
 The data showed refers to a study were they were looking for polimorphisms that
-increase the likelihood of prostate cancer. In these studies, if relatives are
-present in the cohort, only one of them is taken to avoid skewing the results.
-When looking for signs of cancer susceptibility by performing genetic
-fingerprinting, the division based on the degree of relativeness was determined
-'for free' and could be used to remove unwanted samples from the cohort.
+increase the \textbf{likelihood of prostate cancer}. In these studies, if
+relatives are present in the cohort, only one of them is taken to avoid skewing
+the results. When looking for signs of cancer susceptibility by performing
+genetic fingerprinting, the division based on the degree of relativeness was
+determined 'for free' and could be used to remove unwanted samples from the
+cohort.
 
 
 \subsection{Genetic structure of the human population}
 
-One relevant aspect of the human genome is that it contains everything needed to
-learn about the genetic structure of the human population. 
-
-Undestanding the geentic structure of human populations is of fundamental
+Undestanding the genetic structure of human populations is of fundamental
 interest to medial, forensic and anthropological sceinces. 
 
-Some of the reasons as to why knowing the genetic substructure of data is
-important:
-\begin{itemize}
-	\item The goal of association studies is to identify DNA variants that
-	affect disease risk or other traits of interest. However, association
-	studies can be confounded by differences in ancestry.
-	\item Misleading results could arise if individuals selected as sidease
-	cases have different ancestry, on average, than healthy controls. If in a
-	study all controls are of the same ethnicity and the test is done on an
-	individual of a different ethnicity than the test is biased.
- 	\item If we run a GWAS study using two ethnicities and we want to uset the
- 	same markers of sucettibility worldwide, it won't work. 
-\end{itemize}
+The goal of association studies is to \underline{\textbf{identify DNA variants}
+that affect disease risk} or other \underline{traits of interest}. However,
+association studies can be confounded by differences in ancestry. \\
+	
+\textbf{Misleading results} could arise if individuals selected as disease cases
+have different ancestry, on average, than healthy controls. The differences in
+the markers wouldn't be due to the disease itself at this point, instead it
+would be caused by the different origin. If in a study all controls are of the
+same ethnicity and the test is done on an individual of a different ethnicity
+than the test is biased. If we run a GWAS study using two ethnicities and we
+want to uset the same markers of susceptibility worldwide, it won't work. \\
 
 Especially in medicine and in the study of human evolution it is important to
-track the genetic background of individuals that are involved in studies in
-order to understand if the individuals are form a homogeneous population or from
-genetically distant ones. More and more, clinical studies must have declarations
-of the checks and interpretation of the data of the genetic background of the
-individuals present in the study. It is very important to come to results for
-which we know exactly what is the applicability. To avoid spurious results,
-association studies often restrict their focus to a single continental group. 
+\textbf{track the genetic background of individuals} that are involved in
+studies in order to understand if the individuals are form a homogeneous
+population or from genetically distant ones. More and more, clinical studies
+must have declarations of the checks and interpretation of the data of the
+genetic background of the individuals present in the study. It is very important
+to come to results for which we know exactly what is the applicability. To avoid
+spurious results, \underline{association studies often restrict their focus to a
+single continental group}.\\
 
 Advances in high-throughput genotyping technology have improved the
 understanding of global patterns of human genetic variation and suggest the
-potential to use large sample sets to uncover variation among closely spaced
-populations. One important piece of information to consider when developing
-methods to understand the genetic structure of a population, is to think in term
-of variance, which is also relevant for human diseases. Many SNPs have different
-MAFs in different populations. If we use those, and are able to have all of them
-in a simple computational way, we could be able to infer what is one
-individual's genetic background in terms of origins (e.g. chinese origins). 
+potential to use large sample sets to \textbf{uncover variation among closely
+spaced populations}. One important piece of information to consider when
+developing methods to understand the genetic structure of a population, is to
+think in term of variance, which is also relevant for human diseases. Many SNPs
+have different \underline{MAFs} in different populations. If we use those, and
+are able to have all of them in a simple computational way, we could be able to
+infer what is one individual's genetic background in terms of origins (e.g.
+chinese origins).\\
 
 The easiest mathematical approach to assess how well SNPs can distinguish
 ethnicity is by using \textbf{Principal Component Analysis (PCA)}. By running a
 very simple PCA on a set of SNPs including SNPs with different MAF in different
 populations we can, in a space, distinguish different ethnical groups. And we
-could also start thinking at individuals' origins. 
+could also start thinking at individuals' origins.\\
 
-How accuratley can one predict an individuals geographic-ethnical background
-based upon his/her geentic barcode?
+\emph{How accuratley can one predict an individuals geographic-ethnical
+background based upon his/her geentic barcode?}
 
 % study seen in the slides
 \subsubsection{Example paper: 'Genes mirror geography within Europe'}
@@ -659,43 +719,45 @@ supervised search to find the best SNPs to make inference and then they tested
 it on another set of individuals. By using high confidence data (individuals
 with high confidence origin data) and by using the genotypes of highly
 informative SNPs for specific region-related inheritance, they were able to
-rebuild the map of some of the countries in Europe \ref{fig:PCA_countries}. 
+\textbf{rebuild the map of some of the countries in Europe}
+\ref{fig:PCA_countries}. \\
 
 % immagine paper 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\textwidth]{PCA.PNG}
-	\caption{\label{fig:PCA_countries}}
+	\includegraphics[width=1\textwidth]{PCA.PNG}
+	\caption{Distinction of European regions thanks to SNPs.}
+	\label{fig:PCA_countries}
 \end{figure}
 
-This result might be a little bit of a push, but it is true that by using
-properly selected variants it is possible to distinguish individuals coming from
-different countries. The way those SNPs are selected is very similar to the
-process saw for genetic fingerprint, but pushing for the selection of variants
-that are different in terms of MAF in different populations. 
+It is true that by using properly selected variants it is possible to
+distinguish \textbf{individuals coming from different countries}. The way those
+SNPs are selected is very similar to the process saw for genetic fingerprint,
+but pushing for the selection of variants that are different in terms of MAF in
+different populations. 
 
 Clusters that are a bit more dense and distant from the others (like the
 Spain/Portugal cluster) could be due to the fact that many SNPs selected are
-typical of that area and are therefore able to maximize the difference with
-respect to that area (so it is a data-related 'issue').
-
+typical of that area and are therefore able to maximize the difference between
+that area and the others (so it is a data-related 'issue').
+% 
 % immagine 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\textwidth]{PCA_swiss.PNG}
+	\includegraphics[width=0.8\textwidth]{PCA_swiss.PNG}
 	\caption{\label{fig: PCA_swiss}}
 \end{figure}
 
 Focusing on Switzerland, they could even make inference on the linguistic canton
-\ref{fig: PCA_swiss}. Again this is a bit of a push, but it is possibly true
-that in country where some regions have very different habits (e.g. marriage
-within the same area) might lead to have similar genetic fingerprint. 
+\ref{fig: PCA_swiss}. It is possibly true that in country where some regions
+have very different cultures (e.g. marriage within the same area) might be
+different between each other. 
 
 
 \subsubsection{Summary and notes}
-Low-frequency alleles tend to be the result of a recent mutation and are
-expected to geographically cluster around the location at which the mutation
-first arose. Hence, they can be highly informative about the fine-scale
+\textbf{Low-frequency alleles} tend to be the result of a recent mutation and
+are expected to geographically cluster around the location at which the mutation
+first arose. Hence, they can be highly informative about the \textbf{fine-scale}
 population structure.
 
 Despite low average levels of genetic differentiation among Europeans, close
@@ -705,8 +767,6 @@ genetic structure is not properly accounted for.
 
 
 
-% Posso aggiungere il Markdown alla repository GitHub?
-\subsection{SPIA Assay}
-In a hand on lesson we performed ourselves a SNP-based genetic distance test
-using the R package 'SPIAssay'. You can find an R Markdown of that lesson in the
-folder 'Additional material'. 
+\subsection{SPIA Assay} \label{subsect: SPIA} In a hand on lesson we performed
+ourselves a SNP-based genetic distance test using the R package 'SPIAssay'. You
+can find an R Markdown of that lesson in the folder 'Additional material'. 

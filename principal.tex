@@ -9,6 +9,21 @@
 }
 
 % #TODO add contributors
+% #TODO adjust glossary
+\makeglossaries
+
+\newglossaryentry{maths}
+{
+        name=mathematics,
+        description={Mathematics is what mathematicians do}
+}
+
+\newglossaryentry{formula}
+{
+        name=formula,
+        description={A mathematical expression}
+}
+
 
 \begin{document}
 \maketitle
@@ -28,9 +43,15 @@
 \input{chapters/TumorEvolutionStudiesII}
 \input{chapters/extracellular_vesicles.tex}
 
+% #TODO solve minor problems
 
+\clearpage
 
+\printglossary
 %\bibliographystyle{apacite} \bibliography{bibliography}
+
+\bibliographystyle{plain}
+% \bibliography{bibliography.bib}
 
 
 \end{document}
