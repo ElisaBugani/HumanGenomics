@@ -1,44 +1,6 @@
-\chapter{Tumor evolution studies (continued)}
-
-\textbf{\textit{Written by Giorgia Bucciarelli}}
 \graphicspath{{chapters/TumorEvStudiesIIImages/}}
 
-\section{Recalls from the previous lecture}
-
-At the basis of tumor evolution is the concept of how to use {informative SNPs}:
-SNPs for which a specific individual has heterozygous calls so that set of SNPs
-is unique for every individual.
-
-This property is connected to the fact that when we have the loss of an allele,
-the allelic fraction of the informative SNPs within that lesion will be
-informative of the lesion and its depth (clonality = what's the fraction of
-tumor cells that very likely harbor that lesion).
-
-We can also have different population of cells, when a set of lesions is present
-in every population it is said to be clonal whereas when a specific set of
-lesion is harbored only by a subpopulation it is defined as subclonal.
-
-\includegraphics[width=2.37708in,height=2.94375in]{image1.png}\emph{Estimate of
-DNA Admixture}\\
-
-\emph{{Log2 Ratio}} is the log2 of the ratio of the tumor over the normal that
-applies to array data signals (intensity of the signals) but also to the local
-coverage of a tumor BAM file over a normal BAM file.
-
-In the figure each dot is a genomic segment or a gene that clusterize in the
-space and when dots are in a same cluster it means that they very likely share
-the same copy number status and also the same level of clonality.
-
-\emph{{Beta}} is a variable that goes from 0 to 1 and provides information of
-the number of reads that equally represent the two alleles; when beta is equal
-to 1 the concept of admixture (1-purity) is equal to 1 meaning that purity is
-equal to 0 if we are at the top of the y scale it means that there's no signal
-related to tumor content, while the lower we go, so the closer we get to 0, the
-higher the tumor content and the level of clonality is.
-
-If we use this equation we can assess the level of clonality of a cluster.
-
-So the graph in the figure puts in relation the copy number status (log2 ratio)
+The graph in the figure below puts in relation the copy number status (log2 ratio)
 and the purity/clonality of the sample (Beta); the more we go towards the left
 the fewer number of copies, the lower on the y axis the higher the clonality.
 
@@ -47,22 +9,23 @@ using the lowest cluster.
 
 \includegraphics[width=3.46875in,height=2.65139in]{image2.png}\\
 
-We have losses and
-gain of DNA copies, moving on the x axis.
 
-The beta is related to the clonality so the lower we go the more clonal the
-signal is.
 
-The only difference from the previous figure is the presence of extra clusters:
+\chapter{Tumor evolution studies (continued)}
 
+\textbf{\textit{Written by Giorgia Bucciarelli}}\\
+
+\section{Tumor mapping}
+
+Regarding the image presented here below:
 \begin{itemize}
 \item
-  The blue cluster with deletions is the most clonal one
+  The \textbf{blue} cluster with deletions is the most clonal one since $\beta \sim 0$
 \item
-  Both blue and green clusters had deletions, since they have a negative log2
-  ratio, but the green ones are less clonal than the blue ones
+  Both \textbf{blue} and \textbf{green} clusters had deletions, since they have a negative log2
+  ratio, but the green ones are less clonal than the blue ones.
 \item
-  In log2 R = 0 and ß = 1, where there's the red cluster, we have a status of no
+  In log2 R = 0 and ß = 1, where there's the \textbf{red} cluster, we have a status of no
   copy number changes (wild-type status in terms of copy numbers). This
   basically represents a total number of alleles which is the same in both the
   tumor and normal sample.
@@ -70,33 +33,27 @@ The only difference from the previous figure is the presence of extra clusters:
   All the other clusters with a positive log2 ratio had a gain of DNA
 \end{itemize}
 
-\includegraphics[width=2.72153in,height=2.08958in]{image3.png}\\
+\begin{figure}[H]
+  \caption{Presence of multiple populations in the sample}
+  \centering
+  \includegraphics[width=0.8\textwidth]{image3}
+  \label{fig: }
+\end{figure}
 
 In this figure the number of copies that correspond to all the clusters in the
-space is also reported.
+space is also reported. \\
 
-\begin{itemize}
-\item
-  Blue one: one copy of DNA, so we have a deletion
-\item
-  Green one: also one copy of DNA but with subclonality
-\end{itemize}
+Analysis of different samples could be done to assess Clonality and build \emph{\textbf{evolution maps}}.
 
-This is how we can map in the space the status of clonality and the number of
-copies for a specific segment in the genome.
-
-So again, the lower we go the more clonal the clusters are, the more left the
-deeper they are in terms of loss of DNA.
-
-We can use these information to build \emph{{evolution maps}}.
-
-The first thing to do is to look, within each individual, at concomitant
-deletion where one is subclonal to the other one.
-
-\includegraphics[width=3.18859in,height=2.21348in]{image4.png}\\
+\begin{figure}[ht]
+  \caption{Ordering of aberrations}
+  \centering
+  \includegraphics[width=0.7\textwidth]{image4}
+  % \label{fig: ordered aberrations}
+\end{figure}
 
 In the figure:
-
+% #TODO come mai si parla sempre di deletion?
 \begin{itemize}
 \item
   In sample 1 the brown lesion is subclonal to the orange one, and that same
@@ -107,8 +64,7 @@ In the figure:
 \item
   In sample 3 is the same as in sample 1 and 2.
 \item
-  Samples 4 and 5 have the same concomitant green and brown lesions again with
-  the same level of subclonality.
+  Samples 4 and 5 have the same clonal modification green to brown.
 \item
   In sample 5 only we also have another concomitant lesion (blue subclonal to
   brown).
@@ -117,97 +73,71 @@ In the figure:
 So we perform this analysis for all the concomitant lesions in our sample and we
 start drawing the arrows to keep track of what is subclonal to what. We compile
 this list across all individuals and look for how many times we see support for
-the same relationship in the same direction.
-
-In our case we can say that the relationship going from orange to brown is
-supported by 3 out of 5 individuals; the same can be said for the green going to
+the same relationship in the same direction. In our case we can say that the relationship going \textbf{from orange to brown is
+supported by 3 out of 5 samples}; the same can be said for the green going to
 brown. The blue one is instead not significant since it's supported by only one
 individual.
 
-So having multiple observation supporting that aberration x precedes aberration
-y (i.e. aberration y is subclonal to aberration x) we can build an evolution
-chart.
+\begin{figure}[H]
+  \caption{evolution map. The orange and the green which have no relationship between them, are at the
+  same level on the x axis in the path and they both go into brown.}
+  \centering
+  \includegraphics[width=0.5\textwidth]{image5}
+  % \label{fig: }
+\end{figure}
 
-\includegraphics[width=2.38194in,height=2.40417in]{image5.png}\\
 
-The orange and the green which have no relationship between them, are at the
-same level on the x axis in the path and they both go into brown.
 
 So one can assume that the more clonal a lesion is the more likely it is that it
 occurred earlier during the evolution (time is on the x axis of the path), and
 we can look for recurrent relationships among lesions.
+Alterations could be fought in a \textit{\textbf{temporal sequence}}, following the x axis.
 
-In principle we can say that the grey ones at the beginning happened at the same
-time point and then at a second time point, the tumors in our set of samples,
-underwent loss of orange and green genes and then later they both underwent loss
-of the brown gene.
-
-\includegraphics[width=2.63403in,height=1.74097in]{image6.png}\\
+\begin{figure}[H]
+  \caption{Prostate cancer analysis of dependencies}
+  \centering
+  \includegraphics[width=0.6\textwidth]{image6}
+  \label{fig: prostate cancer}
+\end{figure}
 
 If we do that in
 large datasets (lung cancer melanoma, prostate cancer \ldots) we can come up
-with all the dependencies that were observed and that were supported by more
+with all the \textbf{dependencies} that were observed and that were supported by more
 than one individual (e.g. in prostate cancer we can say that a loss in NKX3-1
-precedes the deletion of PTEN).
+precedes the deletion of PTEN; figure \ref*{fig: prostate cancer}).\\
 
 Even if we have hundreds of BAM files on whole exon sequencing data from large
-collections all that we can build are evolution maps with at most three layers
-(pretty disappointing).
+collections all that we can build are \textbf{evolution maps with at most three layers}
+(pretty disappointing). This has multiple reasons, one of them is that:
 
-This has multiple reasons, one of them is that:
-
-\begin{itemize}
-\item
+\begin{center}
   To build a relationship which is statistically significant between two genes
-  we need to have multiple instances of that relationship (in many samples)
-  which means that we need to have co-occurrence of the two lesions and
-  subclonality of the second lesion with respect to the first in a significant
-  number of individuals compared to the total number of individuals that have
-  co-occurrence. So if co-occurrence occurs in N individuals and subclonality of
-  the second lesion to the first one occurs in a fraction of those, only if this
-  fraction is significant with a proportion test out of the total number, then
-  we can build the path.
-\end{itemize}
+  we need to have\textbf{ multiple instances of that relationship (in many samples)}.  
+\end{center}
 
 Therefore we are tremendously limited by co-occurrence of lesions.
 
-To boost the reconstruction of these paths gene families or pathways have been
-exploited.
-
-E.g. if we are dealing with PTEN which is a tumor-suppressive gene relevant in a
+To boost the reconstruction of these paths \textbf{gene families or pathways} have been
+exploited. \textit{\textbf{E.g.}} if we are dealing with PTEN which is a tumor-suppressive gene relevant in a
 specific pathway (PF3K), then it doesn't matter if we have deletion or
 inactivation of the same genes in the same pathway, what matters for the tumor
 evolution is that that specific pathway is altered and so what we can do is
-start aggregating signals from genes that belong to the same pathway.
-
-So if individual 1 has a relationship between gene A and some gene in a specific
-pathway (PF3K) and individual 2 has a relationship between gene A and a second
-gene in that same pathway, then we can assume that maybe they have the same
-effect and so we can aggregate the information on the landing gene.
-
-So instead of going from gene 1 to gene 2 we go from pathway 1 to pathway 2, and
-in terms of numbers what we gain is that the co-occurrences are counted
-including all the gene lesions with the same function in pathway 1 and all the
-gene lesions with the same function in pathway 2 (if we consider the
-inactivation of the gene then we have to consider all the lesions that
-inactivate the gene and not others).
-
-We can then run a simple test to build our path.
+start aggregating signals.\\
 
 With this method we start having some more data to look for major changes during
-the evolution of the tumor pathway.
+the evolution of the tumor pathway.\\
 
-E.g. in prostate cancer we'd identify a set of pathways that are more or less at
+\textit{\textbf{E.g.}} in prostate cancer we'd identify a set of pathways that are more or less at
 some level altered in earlier staged disease and that then trigger or are
 precedent to our pathways. Doing so we can learn more in terms of the biology of
-the disease evolution.
+the disease evolution.\\
 
-We can also decide to go for a mix model or a mix approach, where for certain
-genes we go at the pathway level while for other we treat them separately.
+We can also decide to go for a \textbf{mix model} or a mix approach, where for certain
+genes we go at the pathway level while for other we treat them separately.\\
 
 There are also more complicated ways to make inference of tumor evolution. Some
-try to avoid the hypothesis that the more clonal a lesion is the more likely it
-is to happen early, because we know it's not always the case; it might be in
+try to avoid the hypothesis that \textbf{the more clonal a lesion is the more likely it
+is to happen early}, because we know it's \textbf{not always the case}; it might be in
 untreated samples but not in treated samples. In a treatment regiment, because
 of drug pressure selection, specific resistant clones harboring a specific
 lesion can take over due to their higher rate of proliferation, so in this case
@@ -216,71 +146,70 @@ happened earlier, it may be that it had a higher proliferation and so it's
 taking over (and we see it as apparently clonal but it's in fact a late event)
 -\textgreater{} important concept in precision medicine.
 
-So simplicistic approaches like the one discussed are proper for untreated (in
-terms of drugs) primary diseases.
+% #TODO Evolution charts can also be boosted via the combination of multiple molecular layers.
 
-Evolution charts can also be boosted via the combination of multiple molecular
-layers.
+\section{Ploidy and purity correction on $\log_2(\nicefrac{T}{N})$ data}
 
-\section{Ploidy and purity correction on $\log_2(\frac{T}{N})$ data}
+The \textbf{coverage} makes data coming from different samples comparable because we
+normalize everything to the total coverage, but when we deal with diseased cells
+we can have contamination from the admixture, so we need an extra step. \\
 
-\emph{How can we use measure of the tumor purity and the effect of the tumor
-ploidy?}
+
+\emph{How can we use measure of the tumor purity and the effect of the\textbf{ tumor
+ploidy}?} \\
 
 \emph{How can we compare two different samples for which we quantify completely
-different levels of tumor content?}
+\textbf{different levels of tumor content?}}\\
 
-E.g.: we have a sample a 100\% pure and with 50\% of clonality (a lesion present
+\textit{\textbf{E.g.:}} we have a sample a 100\% pure and with 50\% of clonality (a lesion present
 in 50\% of the cells) and a second sample with a tumor purity of 10\% and a
 clonality of 100\% (a lesion present in 100\% of the cells), we need a way that
 allows us to compare numbers without having to convert everytime for every
 lesion the depth of the lesion based on the tumor content, so we need an
 equation that we can apply to every individual data that puts everything on the
-same level
+same level (same concept as gene expression normalization). \\
 
-(same concept as gene expression normalization).
 
-The coverage makes data coming from different samples comparable because we
-normalize everything to the total coverage, but when we deal with diseased cells
-we can have contamination from the admixture, so we need an extra step.
-
-The step, once we know how to assess the tumor purity and ploidy, is quite
-simple: we need to adjust the data for tumor purity and ploidy.
 
 \emph{Schematically}
 
-\includegraphics[width=3.79931in,height=5.42569in]{image7.png}\\
+\begin{figure}[H]
+  \caption{purity and ploidy correction}
+  \centering
+  \includegraphics[width=0.6\textwidth]{image7}
+  \label{fig: melanoma sample}
+\end{figure}
 
 In the figure we are looking at one tumor sample: a whole genome sequencing of
-one melanoma sample.
+one melanoma sample \ref*{fig: melanoma sample}.
 
 We see multiple peaks which correspond to different copy number states.
 
 Let's suppose we have a genome with a backbone of three copies but we sequence a
 bulk and we don't have 100\% purity but 80\% (so 20\% is contamination).
 
-\emph{\textbf{Ploidy correction}}
+\begin{itemize}
+  \item \emph{\textbf{Ploidy correction}}
 
-Computationally we assess the ploidy through the copy number space and then
-correct the data.
+  Computationally we assess the ploidy through the copy number space and then
+  correct the data.
+  
+  From the tumor and the normal we obtain something like the first graph, and we
+  could wrongly assume that the main peak is always in 0 (wild-type state of the
+  genome), but it shouldn't.
+  
+  In fact, if we assess the ploidy and overall we see a backbone state of three
+  copies for our genome, then the main peak should be shifted toward three.
+  
+  So, the \emph{ploidy correction shifts the distribution} towards the right
+  (second graph).
 
-From the tumor and the normal we obtain something like the first graph, and we
-could wrongly assume that the main peak is always in 0 (wild-type state of the
-genome), but it shouldn't.
+  \item \emph{\textbf{Purity correction}}
 
-In fact, if we assess the ploidy and overall we see a backbone state of three
-copies for our genome, then the main peak should be shifted toward three.
-
-So, the \emph{ploidy correction shifts the distribution} towards the right
-(second graph).
-
-\emph{\textbf{Purity correction}}
-
-We correct our data and the \emph{{purity correction causes a stretch between
-the peaks}}, since tumor admixture dilutes the signal. So, the effect of purity
-correction is a wider spread between the peaks (third graph).
-
-+ add the example graph
+  We correct our data and the \emph{{purity correction causes a stretch between
+  the peaks}}, since tumor admixture dilutes the signal. So, the effect of purity
+  correction is a wider spread between the peaks (third graph).
+\end{itemize}
 
 \begin{itemize}
 \item
